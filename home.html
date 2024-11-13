@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ===header-start=== -->
+    <header>
+      <div class="container">
+        <div class="header-wrp">
+          <a class="header-logo">
+            <img src="./assets/img/header_logo.png" alt="logo" />
+            <span>beta</span>
+          </a>
+          <div class="header-right">
+            <a href="#" class="add_new_event_btn"
+              ><i class="fa-solid fa-plus"></i> New Eventy</a
+            >
+
+            <div class="header-msg-wrp">
+              <a href="#">
+                <svg
+                  viewBox="0 0 25 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.85286 20.2916H8.33203C4.16536 20.2916 2.08203 19.25 2.08203 14.0416L2.08203 8.83331C2.08203 4.66665 4.16536 2.58331 8.33203 2.58331L16.6654 2.58331C20.832 2.58331 22.9154 4.66665 22.9154 8.83331L22.9154 14.0416C22.9154 18.2083 20.832 20.2916 16.6654 20.2916H16.1445C15.8216 20.2916 15.5091 20.4479 15.3112 20.7083L13.7487 22.7916C13.0612 23.7083 11.9362 23.7083 11.2487 22.7916L9.6862 20.7083C9.51953 20.4791 9.13411 20.2916 8.85286 20.2916Z"
+                    stroke="#0F172A"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.29297 8.83331L17.7096 8.83331"
+                    stroke="#0F172A"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.29297 14.0417L13.543 14.0417"
+                    stroke="#0F172A"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="g-badge">10</span>
+              </a>
+            </div>
+
+            <div class="header-notification-wrp dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownButton">
+                <svg
+                  viewBox="0 0 25 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5194 2.58331C8.68605 2.58331 5.58188 5.68748 5.58188 9.52081V11.7083C5.58188 12.4166 5.29022 13.4791 4.92563 14.0833L3.60272 16.2916C2.79022 17.6562 3.35272 19.1771 4.85272 19.6771C9.83188 21.3333 15.2173 21.3333 20.1965 19.6771C21.6027 19.2083 22.2069 17.5625 21.4465 16.2916L20.1235 14.0833C19.759 13.4791 19.4673 12.4062 19.4673 11.7083V9.52081C19.4569 5.70831 16.3319 2.58331 12.5194 2.58331Z"
+                    stroke="#0F172A"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M15.9688 20.1042C15.9688 22.0104 14.4063 23.5729 12.5 23.5729C11.5521 23.5729 10.6771 23.1771 10.0521 22.5521C9.42708 21.9271 9.03125 21.0521 9.03125 20.1042"
+                    stroke="#0F172A"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+                <span class="g-badge">10</span>
+              </button>
+              <ul
+                class="notification-dropdown-menu dropdown-menu"
+                aria-labelledby="dropdownButton"
+              >
+                <div class="notification-dropdown-header">
+                  <h3>Notifications <span>10</span></h3>
+                  <h5>
+                    Mark All Read
+                    <span>
+                      <svg
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.3359 5.91669H13.3359"
+                          stroke="#F73C71"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.9974 5.91669H1.66406"
+                          stroke="#F73C71"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.33073 8.83333C9.94156 8.83333 11.2474 7.5275 11.2474 5.91667C11.2474 4.30584 9.94156 3 8.33073 3C6.7199 3 5.41406 4.30584 5.41406 5.91667C5.41406 7.5275 6.7199 8.83333 8.33073 8.83333Z"
+                          stroke="#F73C71"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.3333 15.0833H15"
+                          stroke="#F73C71"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M6.66406 15.0833H1.66406"
+                          stroke="#F73C71"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.6667 18C13.2775 18 14.5833 16.6942 14.5833 15.0834C14.5833 13.4725 13.2775 12.1667 11.6667 12.1667C10.0558 12.1667 8.75 13.4725 8.75 15.0834C8.75 16.6942 10.0558 18 11.6667 18Z"
+                          stroke="#F73C71"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </h5>
+                </div>
+                <div class="notification-dropdown-content">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          <div class="accordion-button-wrp">
+                            <div class="accordion-button-img-wrp">
+                              <img
+                                src="./assets/img/accordion-button-img.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="accordion-button-content-wrp">
+                              <h3>Sarah’s Birthday</h3>
+                              <p>August 31, 2023</p>
+                            </div>
+                          </div>
+                          <i
+                            class="fa-solid fa-angle-down accordion-angle-icon"
+                          ></i>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> Invited you to co-host</span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>Sarah’s Birthday <span>Accept? </span></p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-accept-invite-btn-wrp">
+                                <button class="accept-btn">
+                                  <i class="fa-regular fa-circle-check"></i>
+                                  Accept
+                                </button>
+                                <button class="decline-btn">
+                                  <i class="fa-regular fa-circle-xmark"></i>
+                                  Decline
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> posted a comment with video on </span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>
+                                  Sarah’s Birthday
+                                  <span><strong>Wall</strong></span>
+                                </p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-video-wrp">
+                                <div class="notification-video">
+                                  <video controls>
+                                    <source src="movie.mp4" type="video/mp4" />
+                                  </video>
+                                  <span class="notification-video_play-icon"
+                                    ><img
+                                      src="./assets/img/notification-video_play-icon.png"
+                                      alt=""
+                                  /></span>
+                                </div>
+                                <div class="notification-video-content">
+                                  <p>
+                                    Thanks everyone for RSVP'ing on time. I hope
+                                    everyone can make it to this special day of
+                                    ours”
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> commented on your post on </span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>
+                                  Sarah’s Birthday
+                                  <span><strong>Wall</strong></span>
+                                </p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-video-comment-wrp">
+                                <h6>That’s was great! love it ❤️</h6>
+                                <div class="notification-video-wrp">
+                                  <div class="notification-video">
+                                    <video controls>
+                                      <source
+                                        src="movie.mp4"
+                                        type="video/mp4"
+                                      />
+                                    </video>
+                                    <span class="notification-video_play-icon"
+                                      ><img
+                                        src="./assets/img/notification-video_play-icon.png"
+                                        alt=""
+                                    /></span>
+                                  </div>
+                                  <div class="notification-video-content">
+                                    <p>
+                                      Thanks everyone for RSVP'ing on time. I
+                                      hope everyone can make it to this special
+                                      day of ours”
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> RSVP’d <strong>NO</strong> for </span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>
+                                  Sarah’s Birthday
+                                  <span><strong>Wall</strong></span>
+                                </p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-rsvp-wrp">
+                                <h4>RSVP’d <span>NO</span></h4>
+                                <a href="#" class="chat-icon">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z"
+                                      stroke="#94A3B8"
+                                      stroke-width="1.5"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M7 8H17"
+                                      stroke="#94A3B8"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M7 13H13"
+                                      stroke="#94A3B8"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          <div class="accordion-button-wrp">
+                            <div class="accordion-button-img-wrp">
+                              <img
+                                src="./assets/img/accordion-button-img.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="accordion-button-content-wrp">
+                              <h3>Sarah’s Birthday</h3>
+                              <p>August 31, 2023</p>
+                            </div>
+                          </div>
+                          <i
+                            class="fa-solid fa-angle-down accordion-angle-icon"
+                          ></i>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> Invited you to co-host</span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>Sarah’s Birthday <span>Accept? </span></p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-accept-invite-btn-wrp">
+                                <button class="accept-btn">
+                                  <i class="fa-regular fa-circle-check"></i>
+                                  Accept
+                                </button>
+                                <button class="decline-btn">
+                                  <i class="fa-regular fa-circle-xmark"></i>
+                                  Decline
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> posted a comment with video on </span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>
+                                  Sarah’s Birthday
+                                  <span><strong>Wall</strong></span>
+                                </p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-video-wrp">
+                                <div class="notification-video">
+                                  <video controls>
+                                    <source src="movie.mp4" type="video/mp4" />
+                                  </video>
+                                  <span class="notification-video_play-icon"
+                                    ><img
+                                      src="./assets/img/notification-video_play-icon.png"
+                                      alt=""
+                                  /></span>
+                                </div>
+                                <div class="notification-video-content">
+                                  <p>
+                                    Thanks everyone for RSVP'ing on time. I hope
+                                    everyone can make it to this special day of
+                                    ours”
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> commented on your post on </span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>
+                                  Sarah’s Birthday
+                                  <span><strong>Wall</strong></span>
+                                </p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-video-comment-wrp">
+                                <h6>That’s was great! love it ❤️</h6>
+                                <div class="notification-video-wrp">
+                                  <div class="notification-video">
+                                    <video controls>
+                                      <source
+                                        src="movie.mp4"
+                                        type="video/mp4"
+                                      />
+                                    </video>
+                                    <span class="notification-video_play-icon"
+                                      ><img
+                                        src="./assets/img/notification-video_play-icon.png"
+                                        alt=""
+                                    /></span>
+                                  </div>
+                                  <div class="notification-video-content">
+                                    <p>
+                                      Thanks everyone for RSVP'ing on time. I
+                                      hope everyone can make it to this special
+                                      day of ours”
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-drodown-body-inner">
+                            <div class="notification-drodown-body-inner-img">
+                              <img
+                                src="./assets/img/header-profile-img.png"
+                                alt=""
+                              />
+                              <span class="active-dot"></span>
+                            </div>
+                            <div
+                              class="notification-drodown-body-inner-content"
+                            >
+                              <div>
+                                <h3>
+                                  James Clark
+                                  <span> RSVP’d <strong>NO</strong> for </span>
+                                </h3>
+                                <h6 class="notification-time-count">10min</h6>
+                              </div>
+                              <div>
+                                <p>
+                                  Sarah’s Birthday
+                                  <span><strong>Wall</strong></span>
+                                </p>
+                                <h6 class="notification-read-dot"></h6>
+                              </div>
+                              <div class="notification-rsvp-wrp">
+                                <h4>RSVP’d <span>NO</span></h4>
+                                <a href="#" class="chat-icon">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z"
+                                      stroke="#94A3B8"
+                                      stroke-width="1.5"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M7 8H17"
+                                      stroke="#94A3B8"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M7 13H13"
+                                      stroke="#94A3B8"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="notification-dropdown-footer">
+                    <a href="#" class="notification-showall-btn">Show All</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <div class="header-profile-wrp">
+              <a href="#">
+                <img src="./assets/img/header-profile-img.png" alt="profile" />
+              </a>
+            </div>
+
+            <button class="moblie-menu-bar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ===header-end=== -->
+
+    <!-- ===main-section-start=== -->
+    <main class="new-main-content">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+              <div class="main-menu-wrp">
+                <h3>Main Menu </h3>
+                  <ul>
+                    <li><a href="#" class="active"><span><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.8224 18.9581H5.1724C2.88906 18.9581 1.03906 17.0998 1.03906 14.8165V8.64148C1.03906 7.50815 1.73906 6.08315 2.63906 5.38315L7.13073 1.88315C8.48073 0.833149 10.6391 0.783149 12.0391 1.76648L17.1891 5.37481C18.1807 6.06648 18.9557 7.54982 18.9557 8.75815V14.8248C18.9557 17.0998 17.1057 18.9581 14.8224 18.9581ZM7.8974 2.86648L3.40573 6.36648C2.81406 6.83315 2.28906 7.89148 2.28906 8.64148V14.8165C2.28906 16.4081 3.58073 17.7081 5.1724 17.7081H14.8224C16.4141 17.7081 17.7057 16.4165 17.7057 14.8248V8.75815C17.7057 7.95815 17.1307 6.84981 16.4724 6.39982L11.3224 2.79148C10.3724 2.12482 8.80573 2.15815 7.8974 2.86648Z" fill="black"/>
+                      <path d="M10 15.625C9.65833 15.625 9.375 15.3417 9.375 15V12.5C9.375 12.1583 9.65833 11.875 10 11.875C10.3417 11.875 10.625 12.1583 10.625 12.5V15C10.625 15.3417 10.3417 15.625 10 15.625Z" fill="black"/>
+                      </svg>
+                      </span> Home</a>
+                    </li>
+                    <li><a href="#"><span><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.66406 4.7915C6.3224 4.7915 6.03906 4.50817 6.03906 4.1665V1.6665C6.03906 1.32484 6.3224 1.0415 6.66406 1.0415C7.00573 1.0415 7.28906 1.32484 7.28906 1.6665V4.1665C7.28906 4.50817 7.00573 4.7915 6.66406 4.7915Z" fill="black"/>
+                      <path d="M13.3359 4.7915C12.9943 4.7915 12.7109 4.50817 12.7109 4.1665V1.6665C12.7109 1.32484 12.9943 1.0415 13.3359 1.0415C13.6776 1.0415 13.9609 1.32484 13.9609 1.6665V4.1665C13.9609 4.50817 13.6776 4.7915 13.3359 4.7915Z" fill="black"/>
+                      <path d="M7.08333 12.0834C6.975 12.0834 6.86666 12.0584 6.76666 12.0168C6.65833 11.9751 6.57501 11.9167 6.49167 11.8417C6.34167 11.6834 6.25 11.4667 6.25 11.2501C6.25 11.0334 6.34167 10.8167 6.49167 10.6584C6.57501 10.5834 6.66666 10.5251 6.76666 10.4834C6.96666 10.4001 7.2 10.4001 7.4 10.4834C7.5 10.5251 7.59166 10.5834 7.67499 10.6584C7.70833 10.7001 7.74999 10.7417 7.77499 10.7834C7.80832 10.8334 7.83334 10.8834 7.85001 10.9334C7.87501 10.9834 7.89168 11.0334 7.90001 11.0834C7.90834 11.1417 7.91667 11.2001 7.91667 11.2501C7.91667 11.4667 7.82499 11.6834 7.67499 11.8417C7.59166 11.9167 7.5 11.9751 7.4 12.0168C7.3 12.0584 7.19167 12.0834 7.08333 12.0834Z" fill="black"/>
+                      <path d="M9.9974 12.0835C9.88906 12.0835 9.78072 12.0585 9.68072 12.0168C9.57239 11.9752 9.48907 11.9168 9.40574 11.8418C9.25574 11.6835 9.16406 11.4668 9.16406 11.2502C9.16406 11.2002 9.17239 11.1418 9.18072 11.0835C9.18905 11.0335 9.20572 10.9835 9.23072 10.9335C9.24738 10.8835 9.27241 10.8335 9.30574 10.7835C9.33907 10.7418 9.3724 10.7002 9.40574 10.6585C9.71407 10.3502 10.2724 10.3502 10.5891 10.6585C10.6224 10.7002 10.6557 10.7418 10.6891 10.7835C10.7224 10.8335 10.7474 10.8835 10.7641 10.9335C10.7891 10.9835 10.8057 11.0335 10.8141 11.0835C10.8224 11.1418 10.8307 11.2002 10.8307 11.2502C10.8307 11.4668 10.7391 11.6835 10.5891 11.8418C10.4307 11.9918 10.2224 12.0835 9.9974 12.0835Z" fill="black"/>
+                      <path d="M7.08333 14.9999C6.975 14.9999 6.86666 14.9749 6.76666 14.9333C6.66666 14.8916 6.57501 14.8332 6.49167 14.7582C6.34167 14.5999 6.25 14.3832 6.25 14.1666C6.25 14.1166 6.25832 14.0582 6.26666 14.0082C6.27499 13.9499 6.29166 13.8999 6.31666 13.8499C6.33332 13.7999 6.35834 13.7499 6.39168 13.6999C6.41668 13.6582 6.45834 13.6166 6.49167 13.5749C6.57501 13.4999 6.66666 13.4416 6.76666 13.3999C6.96666 13.3166 7.2 13.3166 7.4 13.3999C7.5 13.4416 7.59166 13.4999 7.67499 13.5749C7.70833 13.6166 7.74999 13.6582 7.77499 13.6999C7.80832 13.7499 7.83334 13.7999 7.85001 13.8499C7.87501 13.8999 7.89168 13.9499 7.90001 14.0082C7.90834 14.0582 7.91667 14.1166 7.91667 14.1666C7.91667 14.3832 7.82499 14.5999 7.67499 14.7582C7.59166 14.8332 7.5 14.8916 7.4 14.9333C7.3 14.9749 7.19167 14.9999 7.08333 14.9999Z" fill="black"/>
+                      <path d="M17.0807 8.20019H2.91406C2.5724 8.20019 2.28906 7.91686 2.28906 7.5752C2.28906 7.23353 2.5724 6.9502 2.91406 6.9502H17.0807C17.4224 6.9502 17.7057 7.23353 17.7057 7.5752C17.7057 7.91686 17.4224 8.20019 17.0807 8.20019Z" fill="black"/>
+                      <path d="M13.1804 18.9833C12.8637 18.9833 12.5637 18.8667 12.347 18.65C12.0887 18.3917 11.972 18.0167 12.0304 17.625L12.1887 16.5C12.2304 16.2083 12.4054 15.8583 12.6137 15.65L15.5637 12.7C15.9637 12.3 16.3554 12.0917 16.7804 12.05C17.3054 12 17.8137 12.2167 18.297 12.7C18.8054 13.2083 19.4887 14.2417 18.297 15.4333L15.347 18.3833C15.1387 18.5917 14.7887 18.7667 14.497 18.8083L13.372 18.9667C13.3054 18.975 13.247 18.9833 13.1804 18.9833ZM16.922 13.2917C16.9137 13.2917 16.9054 13.2917 16.897 13.2917C16.7804 13.3 16.622 13.4083 16.447 13.5833L13.497 16.5333C13.472 16.5583 13.4304 16.6417 13.4304 16.675L13.2804 17.7167L14.322 17.5667C14.3554 17.5583 14.4387 17.5167 14.4637 17.4917L17.4137 14.5417C17.7804 14.175 17.8304 13.9917 17.4137 13.575C17.2804 13.45 17.0887 13.2917 16.922 13.2917Z" fill="black"/>
+                      <path d="M17.4338 16.0418C17.3755 16.0418 17.3171 16.0334 17.2671 16.0168C16.1671 15.7084 15.2922 14.8334 14.9838 13.7334C14.8922 13.4001 15.0838 13.0584 15.4171 12.9584C15.7505 12.8668 16.0921 13.0584 16.1921 13.3918C16.3838 14.0751 16.9255 14.6168 17.6088 14.8084C17.9421 14.9001 18.1338 15.2501 18.0421 15.5834C17.9588 15.8584 17.7088 16.0418 17.4338 16.0418Z" fill="black"/>
+                      <path d="M10 18.9582H6.66667C3.625 18.9582 1.875 17.2082 1.875 14.1665V7.08317C1.875 4.0415 3.625 2.2915 6.66667 2.2915H13.3333C16.375 2.2915 18.125 4.0415 18.125 7.08317V9.99984C18.125 10.3415 17.8417 10.6248 17.5 10.6248C17.1583 10.6248 16.875 10.3415 16.875 9.99984V7.08317C16.875 4.69984 15.7167 3.5415 13.3333 3.5415H6.66667C4.28333 3.5415 3.125 4.69984 3.125 7.08317V14.1665C3.125 16.5498 4.28333 17.7082 6.66667 17.7082H10C10.3417 17.7082 10.625 17.9915 10.625 18.3332C10.625 18.6748 10.3417 18.9582 10 18.9582Z" fill="black"/>
+                      </svg></span> Events </a>
+                    </li>
+                    <li><a href="#"><span>
+                      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5391 18.9582C13.5974 18.9582 12.6057 18.7332 11.5807 18.2998C10.5807 17.8748 9.5724 17.2915 8.58906 16.5832C7.61406 15.8665 6.6724 15.0665 5.78073 14.1915C4.8974 13.2998 4.0974 12.3582 3.38906 11.3915C2.6724 10.3915 2.0974 9.3915 1.68906 8.42484C1.25573 7.3915 1.03906 6.3915 1.03906 5.44984C1.03906 4.79984 1.15573 4.18317 1.38073 3.60817C1.61406 3.0165 1.98906 2.4665 2.4974 1.9915C3.13906 1.35817 3.8724 1.0415 4.65573 1.0415C4.98073 1.0415 5.31406 1.1165 5.5974 1.24984C5.9224 1.39984 6.1974 1.62484 6.3974 1.92484L8.33073 4.64984C8.50573 4.8915 8.63906 5.12484 8.73073 5.35817C8.83906 5.60817 8.8974 5.85817 8.8974 6.09984C8.8974 6.4165 8.80573 6.72484 8.63073 7.0165C8.50573 7.2415 8.31406 7.48317 8.0724 7.72484L7.50573 8.3165C7.51406 8.3415 7.5224 8.35817 7.53073 8.37484C7.63073 8.54984 7.83073 8.84984 8.21406 9.29984C8.6224 9.7665 9.00573 10.1915 9.38906 10.5832C9.88073 11.0665 10.2891 11.4498 10.6724 11.7665C11.1474 12.1665 11.4557 12.3665 11.6391 12.4582L11.6224 12.4998L12.2307 11.8998C12.4891 11.6415 12.7391 11.4498 12.9807 11.3248C13.4391 11.0415 14.0224 10.9915 14.6057 11.2332C14.8224 11.3248 15.0557 11.4498 15.3057 11.6248L18.0724 13.5915C18.3807 13.7998 18.6057 14.0665 18.7391 14.3832C18.8641 14.6998 18.9224 14.9915 18.9224 15.2832C18.9224 15.6832 18.8307 16.0832 18.6557 16.4582C18.4807 16.8332 18.2641 17.1582 17.9891 17.4582C17.5141 17.9832 16.9974 18.3582 16.3974 18.5998C15.8224 18.8332 15.1974 18.9582 14.5391 18.9582ZM4.65573 2.2915C4.1974 2.2915 3.7724 2.4915 3.36406 2.8915C2.98073 3.24984 2.71406 3.6415 2.5474 4.0665C2.3724 4.49984 2.28906 4.95817 2.28906 5.44984C2.28906 6.22484 2.4724 7.0665 2.83906 7.93317C3.21406 8.8165 3.73906 9.73317 4.40573 10.6498C5.0724 11.5665 5.83073 12.4582 6.66406 13.2998C7.4974 14.1248 8.3974 14.8915 9.3224 15.5665C10.2224 16.2248 11.1474 16.7582 12.0641 17.1415C13.4891 17.7498 14.8224 17.8915 15.9224 17.4332C16.3474 17.2582 16.7224 16.9915 17.0641 16.6082C17.2557 16.3998 17.4057 16.1748 17.5307 15.9082C17.6307 15.6998 17.6807 15.4832 17.6807 15.2665C17.6807 15.1332 17.6557 14.9998 17.5891 14.8498C17.5641 14.7998 17.5141 14.7082 17.3557 14.5998L14.5891 12.6332C14.4224 12.5165 14.2724 12.4332 14.1307 12.3748C13.9474 12.2998 13.8724 12.2248 13.5891 12.3998C13.4224 12.4832 13.2724 12.6082 13.1057 12.7748L12.4724 13.3998C12.1474 13.7165 11.6474 13.7915 11.2641 13.6498L11.0391 13.5498C10.6974 13.3665 10.2974 13.0832 9.85573 12.7082C9.45573 12.3665 9.0224 11.9665 8.4974 11.4498C8.08906 11.0332 7.68073 10.5915 7.25573 10.0998C6.86406 9.6415 6.58073 9.24984 6.40573 8.92484L6.30573 8.67484C6.25573 8.48317 6.23906 8.37484 6.23906 8.25817C6.23906 7.95817 6.3474 7.6915 6.55573 7.48317L7.18073 6.83317C7.3474 6.6665 7.4724 6.50817 7.55573 6.3665C7.6224 6.25817 7.6474 6.1665 7.6474 6.08317C7.6474 6.0165 7.6224 5.9165 7.58073 5.8165C7.5224 5.68317 7.43073 5.53317 7.31406 5.37484L5.38073 2.6415C5.2974 2.52484 5.1974 2.4415 5.0724 2.38317C4.93906 2.32484 4.7974 2.2915 4.65573 2.2915ZM11.6224 12.5082L11.4891 13.0748L11.7141 12.4915C11.6724 12.4832 11.6391 12.4915 11.6224 12.5082Z" fill="#0F172A"/>
+                      </svg></span> Contacts</a>
+                    </li>
+                    <li><a href="#"><span><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.66406 4.7915C6.3224 4.7915 6.03906 4.50817 6.03906 4.1665V1.6665C6.03906 1.32484 6.3224 1.0415 6.66406 1.0415C7.00573 1.0415 7.28906 1.32484 7.28906 1.6665V4.1665C7.28906 4.50817 7.00573 4.7915 6.66406 4.7915Z" fill="#0F172A"/>
+                      <path d="M13.3359 4.7915C12.9943 4.7915 12.7109 4.50817 12.7109 4.1665V1.6665C12.7109 1.32484 12.9943 1.0415 13.3359 1.0415C13.6776 1.0415 13.9609 1.32484 13.9609 1.6665V4.1665C13.9609 4.50817 13.6776 4.7915 13.3359 4.7915Z" fill="#0F172A"/>
+                      <path d="M7.08333 12.0834C6.975 12.0834 6.86666 12.0584 6.76666 12.0168C6.65833 11.9751 6.57501 11.9167 6.49167 11.8417C6.34167 11.6834 6.25 11.4667 6.25 11.2501C6.25 11.0334 6.34167 10.8167 6.49167 10.6584C6.57501 10.5834 6.66666 10.5251 6.76666 10.4834C6.96666 10.4001 7.2 10.4001 7.4 10.4834C7.5 10.5251 7.59166 10.5834 7.67499 10.6584C7.70833 10.7001 7.74999 10.7417 7.77499 10.7834C7.80832 10.8334 7.83334 10.8834 7.85001 10.9334C7.87501 10.9834 7.89168 11.0334 7.90001 11.0834C7.90834 11.1417 7.91667 11.2001 7.91667 11.2501C7.91667 11.4667 7.82499 11.6834 7.67499 11.8417C7.59166 11.9167 7.5 11.9751 7.4 12.0168C7.3 12.0584 7.19167 12.0834 7.08333 12.0834Z" fill="#0F172A"/>
+                      <path d="M9.9974 12.0835C9.88906 12.0835 9.78072 12.0585 9.68072 12.0168C9.57239 11.9752 9.48907 11.9168 9.40574 11.8418C9.25574 11.6835 9.16406 11.4668 9.16406 11.2502C9.16406 11.2002 9.17239 11.1418 9.18072 11.0835C9.18905 11.0335 9.20572 10.9835 9.23072 10.9335C9.24738 10.8835 9.27241 10.8335 9.30574 10.7835C9.33907 10.7418 9.3724 10.7002 9.40574 10.6585C9.71407 10.3502 10.2724 10.3502 10.5891 10.6585C10.6224 10.7002 10.6557 10.7418 10.6891 10.7835C10.7224 10.8335 10.7474 10.8835 10.7641 10.9335C10.7891 10.9835 10.8057 11.0335 10.8141 11.0835C10.8224 11.1418 10.8307 11.2002 10.8307 11.2502C10.8307 11.4668 10.7391 11.6835 10.5891 11.8418C10.4307 11.9918 10.2224 12.0835 9.9974 12.0835Z" fill="#0F172A"/>
+                      <path d="M7.08333 14.9999C6.975 14.9999 6.86666 14.9749 6.76666 14.9333C6.66666 14.8916 6.57501 14.8332 6.49167 14.7582C6.34167 14.5999 6.25 14.3832 6.25 14.1666C6.25 14.1166 6.25832 14.0582 6.26666 14.0082C6.27499 13.9499 6.29166 13.8999 6.31666 13.8499C6.33332 13.7999 6.35834 13.7499 6.39168 13.6999C6.41668 13.6582 6.45834 13.6166 6.49167 13.5749C6.57501 13.4999 6.66666 13.4416 6.76666 13.3999C6.96666 13.3166 7.2 13.3166 7.4 13.3999C7.5 13.4416 7.59166 13.4999 7.67499 13.5749C7.70833 13.6166 7.74999 13.6582 7.77499 13.6999C7.80832 13.7499 7.83334 13.7999 7.85001 13.8499C7.87501 13.8999 7.89168 13.9499 7.90001 14.0082C7.90834 14.0582 7.91667 14.1166 7.91667 14.1666C7.91667 14.3832 7.82499 14.5999 7.67499 14.7582C7.59166 14.8332 7.5 14.8916 7.4 14.9333C7.3 14.9749 7.19167 14.9999 7.08333 14.9999Z" fill="#0F172A"/>
+                      <path d="M17.0807 8.20019H2.91406C2.5724 8.20019 2.28906 7.91686 2.28906 7.5752C2.28906 7.23353 2.5724 6.9502 2.91406 6.9502H17.0807C17.4224 6.9502 17.7057 7.23353 17.7057 7.5752C17.7057 7.91686 17.4224 8.20019 17.0807 8.20019Z" fill="#0F172A"/>
+                      <path d="M13.1804 18.9833C12.8637 18.9833 12.5637 18.8667 12.347 18.65C12.0887 18.3917 11.972 18.0167 12.0304 17.625L12.1887 16.5C12.2304 16.2083 12.4054 15.8583 12.6137 15.65L15.5637 12.7C15.9637 12.3 16.3554 12.0917 16.7804 12.05C17.3054 12 17.8137 12.2167 18.297 12.7C18.8054 13.2083 19.4887 14.2417 18.297 15.4333L15.347 18.3833C15.1387 18.5917 14.7887 18.7667 14.497 18.8083L13.372 18.9667C13.3054 18.975 13.247 18.9833 13.1804 18.9833ZM16.922 13.2917C16.9137 13.2917 16.9054 13.2917 16.897 13.2917C16.7804 13.3 16.622 13.4083 16.447 13.5833L13.497 16.5333C13.472 16.5583 13.4304 16.6417 13.4304 16.675L13.2804 17.7167L14.322 17.5667C14.3554 17.5583 14.4387 17.5167 14.4637 17.4917L17.4137 14.5417C17.7804 14.175 17.8304 13.9917 17.4137 13.575C17.2804 13.45 17.0887 13.2917 16.922 13.2917Z" fill="#0F172A"/>
+                      <path d="M17.4338 16.0418C17.3755 16.0418 17.3171 16.0334 17.2671 16.0168C16.1671 15.7084 15.2922 14.8334 14.9838 13.7334C14.8922 13.4001 15.0838 13.0584 15.4171 12.9584C15.7505 12.8668 16.0921 13.0584 16.1921 13.3918C16.3838 14.0751 16.9255 14.6168 17.6088 14.8084C17.9421 14.9001 18.1338 15.2501 18.0421 15.5834C17.9588 15.8584 17.7088 16.0418 17.4338 16.0418Z" fill="#0F172A"/>
+                      <path d="M10 18.9582H6.66667C3.625 18.9582 1.875 17.2082 1.875 14.1665V7.08317C1.875 4.0415 3.625 2.2915 6.66667 2.2915H13.3333C16.375 2.2915 18.125 4.0415 18.125 7.08317V9.99984C18.125 10.3415 17.8417 10.6248 17.5 10.6248C17.1583 10.6248 16.875 10.3415 16.875 9.99984V7.08317C16.875 4.69984 15.7167 3.5415 13.3333 3.5415H6.66667C4.28333 3.5415 3.125 4.69984 3.125 7.08317V14.1665C3.125 16.5498 4.28333 17.7082 6.66667 17.7082H10C10.3417 17.7082 10.625 17.9915 10.625 18.3332C10.625 18.6748 10.3417 18.9582 10 18.9582Z" fill="#0F172A"/>
+                      </svg></span> Drafts</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="home-center-main">
+                  <div class="home-center-content">
+                    <div class="home-center-content-head">
+                        <h1>Hi, Pristia!</h1>
+                    </div>
+                    <div class="home-center-profile-wrp">
+                        <div class="home-center-profile-head">
+                          <div class="home-center-profile-img">
+                              <img src="./assets/img/header-profile-img.png" alt="">
+                              <span class="active-dot"></span>
+                          </div>
+                          <div class="home-center-profile-content">
+                              <h3>Pristia Candra <span>PRO</span></h3>
+                              <p>Member Since: June, 2023</p>
+                          </div>
+                        </div>
+                        <div class="home-center-profile-info">
+                            <div class="home-center-profile-info-inner">
+                                <h3>54</h3>
+                                <h5>Events</h5>
+                            </div>
+                            <div class="home-center-profile-info-inner">
+                                <h3>103</h3>
+                                <h5>Photos</h5>
+                            </div>
+                            <div class="home-center-profile-info-inner">
+                                <h3>2.2k</h3>
+                                <h5>Comments</h5>
+                            </div>
+                        </div>
+                        <div class="home-center-profile-status">
+                            <div class="home-center-profile-status-inner">
+                                <h5>
+                                  <span><svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9.77162 2.82589V1.91589C9.77162 1.67673 9.57328 1.47839 9.33412 1.47839C9.09495 1.47839 8.89662 1.67673 8.89662 1.91589V2.79089H5.10495V1.91589C5.10495 1.67673 4.90662 1.47839 4.66745 1.47839C4.42828 1.47839 4.22995 1.67673 4.22995 1.91589V2.82589C2.65495 2.97173 1.89078 3.91089 1.77412 5.30506C1.76245 5.47423 1.90245 5.61423 2.06578 5.61423H11.9358C12.1049 5.61423 12.245 5.46839 12.2275 5.30506C12.1108 3.91089 11.3466 2.97173 9.77162 2.82589Z" fill="#F73C71"></path>
+                                  <path d="M11.0833 9.5C9.79417 9.5 8.75 10.5442 8.75 11.8333C8.75 12.2708 8.8725 12.685 9.08833 13.035C9.49083 13.7117 10.2317 14.1667 11.0833 14.1667C11.935 14.1667 12.6758 13.7117 13.0783 13.035C13.2942 12.685 13.4167 12.2708 13.4167 11.8333C13.4167 10.5442 12.3725 9.5 11.0833 9.5ZM12.2908 11.5825L11.0483 12.7317C10.9667 12.8075 10.8558 12.8483 10.7508 12.8483C10.64 12.8483 10.5292 12.8075 10.4417 12.72L9.86417 12.1425C9.695 11.9733 9.695 11.6933 9.86417 11.5242C10.0333 11.355 10.3133 11.355 10.4825 11.5242L10.7625 11.8042L11.6958 10.9408C11.8708 10.7775 12.1508 10.7892 12.3142 10.9642C12.4775 11.1392 12.4658 11.4133 12.2908 11.5825Z" fill="#F73C71"></path>
+                                  <path d="M11.6667 6.48853H2.33333C2.0125 6.48853 1.75 6.75103 1.75 7.07186V10.6652C1.75 12.4152 2.625 13.5819 4.66667 13.5819H7.5425C7.945 13.5819 8.225 13.191 8.09667 12.8119C7.98 12.4735 7.88083 12.1002 7.88083 11.8319C7.88083 10.0644 9.32167 8.62353 11.0892 8.62353C11.2583 8.62353 11.4275 8.63519 11.5908 8.66436C11.9408 8.71686 12.2558 8.44269 12.2558 8.09269V7.07769C12.25 6.75103 11.9875 6.48853 11.6667 6.48853ZM5.3725 11.371C5.26167 11.476 5.11 11.5402 4.95833 11.5402C4.80667 11.5402 4.655 11.476 4.54417 11.371C4.43917 11.2602 4.375 11.1085 4.375 10.9569C4.375 10.8052 4.43917 10.6535 4.54417 10.5427C4.6025 10.4902 4.66083 10.4494 4.73667 10.4202C4.9525 10.3269 5.20917 10.3794 5.3725 10.5427C5.4775 10.6535 5.54167 10.8052 5.54167 10.9569C5.54167 11.1085 5.4775 11.2602 5.3725 11.371ZM5.3725 9.32936C5.34333 9.35269 5.31417 9.37603 5.285 9.39936C5.25 9.42269 5.215 9.44019 5.18 9.45186C5.145 9.46936 5.11 9.48102 5.075 9.48686C5.03417 9.49269 4.99333 9.49853 4.95833 9.49853C4.80667 9.49853 4.655 9.43436 4.54417 9.32936C4.43917 9.21853 4.375 9.06686 4.375 8.91519C4.375 8.76353 4.43917 8.61186 4.54417 8.50103C4.67833 8.36686 4.8825 8.30269 5.075 8.34353C5.11 8.34936 5.145 8.36103 5.18 8.37853C5.215 8.39019 5.25 8.40769 5.285 8.43103C5.31417 8.45436 5.34333 8.47769 5.3725 8.50103C5.4775 8.61186 5.54167 8.76353 5.54167 8.91519C5.54167 9.06686 5.4775 9.21853 5.3725 9.32936ZM7.41417 9.32936C7.30333 9.43436 7.15167 9.49853 7 9.49853C6.84833 9.49853 6.69667 9.43436 6.58583 9.32936C6.48083 9.21853 6.41667 9.06686 6.41667 8.91519C6.41667 8.76353 6.48083 8.61186 6.58583 8.50103C6.8075 8.28519 7.19833 8.28519 7.41417 8.50103C7.51917 8.61186 7.58333 8.76353 7.58333 8.91519C7.58333 9.06686 7.51917 9.21853 7.41417 9.32936Z" fill="#F73C71"></path>
+                                </svg></span>
+                                Pending your RSVP
+                              </h5>
+                              <h3>3</h3>
+                            </div>
+                            <div class="home-center-profile-status-inner">
+                                <h5>
+                                  <span><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M11.2021 12.23C10.8812 13.0525 10.0996 13.5833 9.21875 13.5833H5.77708C4.89041 13.5833 4.11458 13.0525 3.79375 12.23C3.47291 11.4017 3.69458 10.4858 4.34791 9.89083L6.71041 7.75H8.29125L10.6479 9.89083C11.3012 10.4858 11.5171 11.4017 11.2021 12.23Z" fill="#F73C71"></path>
+                                    <path d="M8.56297 11.3313H6.43964C6.21797 11.3313 6.04297 11.1505 6.04297 10.9346C6.04297 10.713 6.2238 10.538 6.43964 10.538H8.56297C8.78464 10.538 8.95964 10.7188 8.95964 10.9346C8.95964 11.1505 8.7788 11.3313 8.56297 11.3313Z" fill="#F73C71"></path>
+                                    <path d="M11.2032 3.26996C10.8824 2.44746 10.1007 1.91663 9.21991 1.91663H5.77824C4.89741 1.91663 4.11574 2.44746 3.79491 3.26996C3.47991 4.09829 3.69574 5.01413 4.35491 5.60913L6.71158 7.74996H8.29241L10.6491 5.60913C11.3024 5.01413 11.5182 4.09829 11.2032 3.26996ZM8.56074 4.96746H6.43741C6.21574 4.96746 6.04074 4.78663 6.04074 4.57079C6.04074 4.35496 6.22158 4.17413 6.43741 4.17413H8.56074C8.78241 4.17413 8.95741 4.35496 8.95741 4.57079C8.95741 4.78663 8.77658 4.96746 8.56074 4.96746Z" fill="#F73C71"></path>
+                                  </svg></span>
+                                Upcoming Events
+                              </h5>
+                              <h3>3</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="home-center-upcoming-events-wrp">
+                      <div class="home-center-upcoming-events-title">
+                        <h3>Upcoming Events</h3>
+                        <a href="#">All Events</a>
+                      </div>
+                      <div class="home-center-upcoming-events-card mb-3">
+                          <div class="home-upcoming-events-card-left">
+                              <div class="home-upcoming-events-card-left-profile">
+                                  <div class="home-upcoming-events-card-left-profile-img">
+                                      <img src="./assets/img/header-profile-img.png" alt="">
+                                  </div>
+                                  <div class="home-upcoming-events-card-left-profile-content">
+                                      <h3>Summer Time Bash 2024!!</h3>
+                                      <p>Pristia Candra <span><i class="fa-solid fa-circle"></i> 10min</span></p>
+                                  </div>
+                              </div>
+                              <ul class="home-upcoming-events-card-left-detail">
+                                <li><span>Guest : </span> RSVP’d - Yes</li>
+                                <li><span>24 Jun <i class="fa-solid fa-circle"></i> Saturday</span> 9:00 PM</li>
+                              </ul>
+                              <div class="home-upcoming-events-card-left-foot">
+                                  <div class="home-upcoming-events-card-rsvp-data">
+                                      <h6 class="card-rsvp-done"><i class="fa-regular fa-circle-check"></i> 100</h6>
+                                      <h6 class="card-rsvp-pending"><i class="fa-regular fa-circle-question"></i> 100</h6>
+                                      <h6 class="card-rsvp-cancel"><i class="fa-regular fa-circle-xmark"></i> 100</h6>
+                                  </div>
+                                  <div class="upcoming-events-card-notification-wrp dropdown">
+                                    <button class="dropdown-toggle" type="button" id="upcoming-card-dropdownButton">
+                                      <svg viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5194 2.58331C8.68605 2.58331 5.58188 5.68748 5.58188 9.52081V11.7083C5.58188 12.4166 5.29022 13.4791 4.92563 14.0833L3.60272 16.2916C2.79022 17.6562 3.35272 19.1771 4.85272 19.6771C9.83188 21.3333 15.2173 21.3333 20.1965 19.6771C21.6027 19.2083 22.2069 17.5625 21.4465 16.2916L20.1235 14.0833C19.759 13.4791 19.4673 12.4062 19.4673 11.7083V9.52081C19.4569 5.70831 16.3319 2.58331 12.5194 2.58331Z" stroke="#0F172A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
+                                        <path d="M15.9688 20.1042C15.9688 22.0104 14.4063 23.5729 12.5 23.5729C11.5521 23.5729 10.6771 23.1771 10.0521 22.5521C9.42708 21.9271 9.03125 21.0521 9.03125 20.1042" stroke="#0F172A" stroke-width="1.5" stroke-miterlimit="10"></path>
+                                      </svg>
+                                      <span class="g-badge">10</span>
+                                    </button>
+                                    <ul class="upcoming-events-card-notification-info dropdown-menu">
+                                        <li><button><i class="fa-regular fa-bell"></i> Silence Notifications</button></li>
+                                    </ul>
+                                  </div>
+                                  <div class="dropdown upcoming-card-dropdown">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.0475 4.66603L4.20585 11.9077C3.94752 12.1827 3.69752 12.7244 3.64752 13.0994L3.33918 15.7994C3.23085 16.7744 3.93085 17.441 4.89752 17.2744L7.58085 16.816C7.95585 16.7494 8.48085 16.4744 8.73918 16.191L15.5809 8.94937C16.7642 7.69937 17.2975 6.27437 15.4558 4.5327C13.6225 2.8077 12.2308 3.41603 11.0475 4.66603Z" stroke="#94A3B8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.90625 5.87451C10.2646 8.17451 12.1312 9.93284 14.4479 10.1662" stroke="#94A3B8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                          Edit Event
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.3307 10.7493V14.2494C13.3307 17.166 12.1641 18.3327 9.2474 18.3327H5.7474C2.83073 18.3327 1.66406 17.166 1.66406 14.2494V10.7493C1.66406 7.83268 2.83073 6.66602 5.7474 6.66602H9.2474C12.1641 6.66602 13.3307 7.83268 13.3307 10.7493Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.3307 5.74935V9.24935C18.3307 12.166 17.1641 13.3327 14.2474 13.3327H13.3307V10.7493C13.3307 7.83268 12.1641 6.66602 9.2474 6.66602H6.66406V5.74935C6.66406 2.83268 7.83073 1.66602 10.7474 1.66602H14.2474C17.1641 1.66602 18.3307 2.83268 18.3307 5.74935Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                          Duplicate Event
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.9974 18.9577C5.05573 18.9577 1.03906 14.941 1.03906 9.99935C1.03906 5.05768 5.05573 1.04102 9.9974 1.04102C14.9391 1.04102 18.9557 5.05768 18.9557 9.99935C18.9557 14.941 14.9391 18.9577 9.9974 18.9577ZM9.9974 2.29102C5.7474 2.29102 2.28906 5.74935 2.28906 9.99935C2.28906 14.2493 5.7474 17.7077 9.9974 17.7077C14.2474 17.7077 17.7057 14.2493 17.7057 9.99935C17.7057 5.74935 14.2474 2.29102 9.9974 2.29102Z" fill="#F73C71"/>
+                                            <path d="M10 11.4577C9.65833 11.4577 9.375 11.1743 9.375 10.8327V6.66602C9.375 6.32435 9.65833 6.04102 10 6.04102C10.3417 6.04102 10.625 6.32435 10.625 6.66602V10.8327C10.625 11.1743 10.3417 11.4577 10 11.4577Z" fill="#F73C71"/>
+                                            <path d="M9.9974 14.1664C9.88906 14.1664 9.78073 14.1414 9.68073 14.0997C9.58073 14.0581 9.48906 13.9997 9.40573 13.9247C9.33073 13.8414 9.2724 13.7581 9.23073 13.6497C9.18906 13.5497 9.16406 13.4414 9.16406 13.3331C9.16406 13.2247 9.18906 13.1164 9.23073 13.0164C9.2724 12.9164 9.33073 12.8247 9.40573 12.7414C9.48906 12.6664 9.58073 12.6081 9.68073 12.5664C9.88073 12.4831 10.1141 12.4831 10.3141 12.5664C10.4141 12.6081 10.5057 12.6664 10.5891 12.7414C10.6641 12.8247 10.7224 12.9164 10.7641 13.0164C10.8057 13.1164 10.8307 13.2247 10.8307 13.3331C10.8307 13.4414 10.8057 13.5497 10.7641 13.6497C10.7224 13.7581 10.6641 13.8414 10.5891 13.9247C10.5057 13.9997 10.4141 14.0581 10.3141 14.0997C10.2141 14.1414 10.1057 14.1664 9.9974 14.1664Z" fill="#F73C71"/>
+                                          </svg>
+                                          Cancel Event
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="home-upcoming-events-card-right">
+                              <img src="./assets/img/host-by-template-img.png" alt="">
+                          </div>
+                      </div>
+                      <div class="home-center-upcoming-events-card mb-3">
+                          <div class="home-upcoming-events-card-left">
+                              <div class="home-upcoming-events-card-left-profile">
+                                  <div class="home-upcoming-events-card-left-profile-img">
+                                      <img src="./assets/img/header-profile-img.png" alt="">
+                                  </div>
+                                  <div class="home-upcoming-events-card-left-profile-content">
+                                      <h3>Summer Time Bash 2024!!</h3>
+                                      <p>Pristia Candra <span><i class="fa-solid fa-circle"></i> 10min</span></p>
+                                  </div>
+                              </div>
+                              <ul class="home-upcoming-events-card-left-detail">
+                                <li><span>Guest : </span> RSVP’d - Yes</li>
+                                <li><span>24 Jun <i class="fa-solid fa-circle"></i> Saturday</span> 9:00 PM</li>
+                              </ul>
+                              <div class="home-upcoming-events-card-left-foot">
+                                  <div class="home-upcoming-events-card-rsvp-data">
+                                      <h6 class="card-rsvp-done"><i class="fa-regular fa-circle-check"></i> 100</h6>
+                                      <h6 class="card-rsvp-pending"><i class="fa-regular fa-circle-question"></i> 100</h6>
+                                      <h6 class="card-rsvp-cancel"><i class="fa-regular fa-circle-xmark"></i> 100</h6>
+                                  </div>
+                                  <div class="upcoming-events-card-notification-wrp dropdown">
+                                    <button class="dropdown-toggle" type="button" id="upcoming-card-dropdownButton">
+                                      <svg viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5194 2.58331C8.68605 2.58331 5.58188 5.68748 5.58188 9.52081V11.7083C5.58188 12.4166 5.29022 13.4791 4.92563 14.0833L3.60272 16.2916C2.79022 17.6562 3.35272 19.1771 4.85272 19.6771C9.83188 21.3333 15.2173 21.3333 20.1965 19.6771C21.6027 19.2083 22.2069 17.5625 21.4465 16.2916L20.1235 14.0833C19.759 13.4791 19.4673 12.4062 19.4673 11.7083V9.52081C19.4569 5.70831 16.3319 2.58331 12.5194 2.58331Z" stroke="#0F172A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
+                                        <path d="M15.9688 20.1042C15.9688 22.0104 14.4063 23.5729 12.5 23.5729C11.5521 23.5729 10.6771 23.1771 10.0521 22.5521C9.42708 21.9271 9.03125 21.0521 9.03125 20.1042" stroke="#0F172A" stroke-width="1.5" stroke-miterlimit="10"></path>
+                                      </svg>
+                                      <span class="g-badge">10</span>
+                                    </button>
+                                    <ul class="upcoming-events-card-notification-info dropdown-menu">
+                                        <li><button><i class="fa-regular fa-bell"></i> Silence Notifications</button></li>
+                                    </ul>
+                                  </div>
+                                  <div class="dropdown upcoming-card-dropdown">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.0475 4.66603L4.20585 11.9077C3.94752 12.1827 3.69752 12.7244 3.64752 13.0994L3.33918 15.7994C3.23085 16.7744 3.93085 17.441 4.89752 17.2744L7.58085 16.816C7.95585 16.7494 8.48085 16.4744 8.73918 16.191L15.5809 8.94937C16.7642 7.69937 17.2975 6.27437 15.4558 4.5327C13.6225 2.8077 12.2308 3.41603 11.0475 4.66603Z" stroke="#94A3B8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.90625 5.87451C10.2646 8.17451 12.1312 9.93284 14.4479 10.1662" stroke="#94A3B8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                          Edit Event
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.3307 10.7493V14.2494C13.3307 17.166 12.1641 18.3327 9.2474 18.3327H5.7474C2.83073 18.3327 1.66406 17.166 1.66406 14.2494V10.7493C1.66406 7.83268 2.83073 6.66602 5.7474 6.66602H9.2474C12.1641 6.66602 13.3307 7.83268 13.3307 10.7493Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.3307 5.74935V9.24935C18.3307 12.166 17.1641 13.3327 14.2474 13.3327H13.3307V10.7493C13.3307 7.83268 12.1641 6.66602 9.2474 6.66602H6.66406V5.74935C6.66406 2.83268 7.83073 1.66602 10.7474 1.66602H14.2474C17.1641 1.66602 18.3307 2.83268 18.3307 5.74935Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                          Duplicate Event
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.9974 18.9577C5.05573 18.9577 1.03906 14.941 1.03906 9.99935C1.03906 5.05768 5.05573 1.04102 9.9974 1.04102C14.9391 1.04102 18.9557 5.05768 18.9557 9.99935C18.9557 14.941 14.9391 18.9577 9.9974 18.9577ZM9.9974 2.29102C5.7474 2.29102 2.28906 5.74935 2.28906 9.99935C2.28906 14.2493 5.7474 17.7077 9.9974 17.7077C14.2474 17.7077 17.7057 14.2493 17.7057 9.99935C17.7057 5.74935 14.2474 2.29102 9.9974 2.29102Z" fill="#F73C71"/>
+                                            <path d="M10 11.4577C9.65833 11.4577 9.375 11.1743 9.375 10.8327V6.66602C9.375 6.32435 9.65833 6.04102 10 6.04102C10.3417 6.04102 10.625 6.32435 10.625 6.66602V10.8327C10.625 11.1743 10.3417 11.4577 10 11.4577Z" fill="#F73C71"/>
+                                            <path d="M9.9974 14.1664C9.88906 14.1664 9.78073 14.1414 9.68073 14.0997C9.58073 14.0581 9.48906 13.9997 9.40573 13.9247C9.33073 13.8414 9.2724 13.7581 9.23073 13.6497C9.18906 13.5497 9.16406 13.4414 9.16406 13.3331C9.16406 13.2247 9.18906 13.1164 9.23073 13.0164C9.2724 12.9164 9.33073 12.8247 9.40573 12.7414C9.48906 12.6664 9.58073 12.6081 9.68073 12.5664C9.88073 12.4831 10.1141 12.4831 10.3141 12.5664C10.4141 12.6081 10.5057 12.6664 10.5891 12.7414C10.6641 12.8247 10.7224 12.9164 10.7641 13.0164C10.8057 13.1164 10.8307 13.2247 10.8307 13.3331C10.8307 13.4414 10.8057 13.5497 10.7641 13.6497C10.7224 13.7581 10.6641 13.8414 10.5891 13.9247C10.5057 13.9997 10.4141 14.0581 10.3141 14.0997C10.2141 14.1414 10.1057 14.1664 9.9974 14.1664Z" fill="#F73C71"/>
+                                          </svg>
+                                          Cancel Event
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="home-upcoming-events-card-right">
+                              <img src="./assets/img/host-by-template-img.png" alt="">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="home-main-right">
+                    <div class="calendar-wrp">
+                      <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Calendar
+                              </button>
+
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <div class="calender-month-event-stats-wrp">
+                                      <div class="calender-month-event-stats-title">
+                                          <h3>
+                                            <span>
+                                              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M2.16797 18.3334H18.8346" stroke="#94A3B8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                              <path d="M8.625 3.33329V18.3333H12.375V3.33329C12.375 2.41663 12 1.66663 10.875 1.66663H10.125C9 1.66663 8.625 2.41663 8.625 3.33329Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                              <path d="M3 8.33329V18.3333H6.33333V8.33329C6.33333 7.41663 6 6.66663 5 6.66663H4.33333C3.33333 6.66663 3 7.41663 3 8.33329Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                              <path d="M14.668 12.5V18.3334H18.0013V12.5C18.0013 11.5834 17.668 10.8334 16.668 10.8334H16.0013C15.0013 10.8334 14.668 11.5834 14.668 12.5Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                              </svg>
+                                            </span>
+                                            Month Event Stats:
+                                          </h3>
+                                          <i class="fa-solid fa-angle-right"></i>
+                                      </div>
+                                      <div class="calender-month-event-stats-inner">
+                                          <h5>
+                                            <span>
+                                              <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M5.33301 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.667 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M2.33301 6.31H13.6663" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M14 5.91665V11.5833C14 13.5833 13 14.9166 10.6667 14.9166H5.33333C3 14.9166 2 13.5833 2 11.5833V5.91665C2 3.91665 3 2.58331 5.33333 2.58331H10.6667C13 2.58331 14 3.91665 14 5.91665Z" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.4635 9.38332H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.4635 11.3833H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M7.99666 9.38332H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M7.99666 11.3833H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M5.52987 9.38332H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M5.52987 11.3833H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                            </span>
+                                            Total Events
+                                          </h5>
+                                          <h3 class="text-center">12</h3>
+                                      </div>
+                                      <div class="calender-month-event-stats-inner-wrp">
+                                        <div class="calender-month-event-stats-inner">
+                                          <h5>
+                                            <span>
+                                              <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M5.33301 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.667 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M2.33301 6.31H13.6663" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M14 5.91665V11.5833C14 13.5833 13 14.9166 10.6667 14.9166H5.33333C3 14.9166 2 13.5833 2 11.5833V5.91665C2 3.91665 3 2.58331 5.33333 2.58331H10.6667C13 2.58331 14 3.91665 14 5.91665Z" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.4635 9.38332H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.4635 11.3833H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M7.99666 9.38332H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M7.99666 11.3833H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M5.52987 9.38332H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M5.52987 11.3833H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                            </span>
+                                            Invited To 
+                                          </h5>
+                                          <h3 class="text-left">12</h3>
+                                        </div>
+                                        <div class="calender-month-event-stats-inner">
+                                          <h5>
+                                            <span>
+                                              <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M5.33301 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.667 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M2.33301 6.31H13.6663" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M14 5.91665V11.5833C14 13.5833 13 14.9166 10.6667 14.9166H5.33333C3 14.9166 2 13.5833 2 11.5833V5.91665C2 3.91665 3 2.58331 5.33333 2.58331H10.6667C13 2.58331 14 3.91665 14 5.91665Z" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.4635 9.38332H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M10.4635 11.3833H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M7.99666 9.38332H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M7.99666 11.3833H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M5.52987 9.38332H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M5.52987 11.3833H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                            </span>
+                                            Hosting
+                                          </h5>
+                                          <h3 class="text-left">12</h3>
+                                        </div>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="calender-month-event-stats-inner">
+                      <h5>
+                        <span>
+                          <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.33301 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M10.667 1.58331V3.58331" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2.33301 6.31H13.6663" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14 5.91665V11.5833C14 13.5833 13 14.9166 10.6667 14.9166H5.33333C3 14.9166 2 13.5833 2 11.5833V5.91665C2 3.91665 3 2.58331 5.33333 2.58331H10.6667C13 2.58331 14 3.91665 14 5.91665Z" stroke="#F73C71" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M10.4635 9.38332H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M10.4635 11.3833H10.4694" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M7.99666 9.38332H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M7.99666 11.3833H8.00265" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M5.52987 9.38332H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M5.52987 11.3833H5.53585" stroke="#F73C71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                        Total Events for 2024
+                      </h5>
+                      <h3 class="text-center">12</h3>
+                    </div>
+                    <div class="home-latest-draf-wrp">
+                      <div class="home-center-upcoming-events-title">
+                        <h3>Latest Drafts</h3>
+                        <a href="#">All Drafts</a>
+                      </div>
+                      <div class="home-latest-draf-card">
+                          <div class="home-latest-draf-card-head">
+                              <div class="home-latest-draf-card-head-img">
+                                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.99609 9H11.4961" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M5.99609 17H7.99609" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M10.4961 17H14.4961" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M21.9961 12.53V16.61C21.9961 20.12 21.1061 21 17.5561 21H6.43609C2.88609 21 1.99609 20.12 1.99609 16.61V8.39C1.99609 4.88 2.88609 4 6.43609 4H14.4961" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M19.0764 4.63L15.3664 8.34C15.2264 8.48 15.0864 8.76 15.0564 8.96L14.8564 10.38C14.7864 10.89 15.1464 11.25 15.6564 11.18L17.0764 10.98C17.2764 10.95 17.5564 10.81 17.6964 10.67L21.4064 6.96C22.0464 6.32 22.3464 5.58 21.4064 4.64C20.4564 3.69 19.7164 3.99 19.0764 4.63Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M18.5459 5.16C18.8659 6.29 19.7459 7.17 20.8659 7.48" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                              </div>
+                              <div class="home-latest-draf-card-head-content">
+                                <h3>Brenden’s BBQ</h3>
+                                <p>Last Save:  December 23, 2022 - 8:31 PM</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <!-- ===main-section-end=== -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    >
+    </script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/scritp.js"></script>
+
+  </body>
+</html>

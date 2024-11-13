@@ -1,0 +1,573 @@
+.main-menu-wrp{
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0px 64px 64px -48px rgba(15,15,15,8%);
+    padding: 10px;
+}
+
+.main-menu-wrp h3{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 24px;
+    line-height: 36px;
+    color: #050505;
+    text-transform: capitalize;
+}
+.main-menu-wrp ul{
+    padding: 15px !important;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.main-menu-wrp ul li a{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--secondary-black);
+    padding: 15px 20px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+
+.main-menu-wrp ul li:last-child a{
+    margin-bottom: 0px;
+}
+
+.main-menu-wrp ul li a span{
+    display: block;
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+}
+
+.main-menu-wrp ul li a:hover{
+    background-color: #F8F9FD;
+}
+
+.main-menu-wrp ul li a.active{
+    background-color: #F8F9FD;
+}
+
+.home-center-content-head h1{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 36px;
+    line-height: normal;
+    color: var(--primary-black);
+}
+
+.home-center-content-head{
+    margin-bottom: 20px;
+}
+.home-center-profile-img{
+    width: 100%;
+    max-width: 55px;
+    height: 55px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.home-center-profile-img img{
+    border-radius: 50%;
+}
+.home-center-profile-img .active-dotg{
+    bottom: 0px;
+    right: 1px;
+}
+
+.home-center-profile-content h3{
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 18px;
+    line-height: normal;
+    color: var(--primary-black);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home-center-profile-content h3 span{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 13px;
+    line-height: normal;
+    color: #E73080;
+    text-transform: uppercase;
+    background-color: #FFEAF3;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+.home-center-profile-content p{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 14px;
+    line-height: normal;
+    color: #23AA26;
+    margin-bottom: 0px;
+
+}
+
+.home-center-profile-head{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.home-center-profile-wrp{
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0px 64px 64px -48px rgba(15,15,15,8%);
+    padding: 10px;
+}
+
+.home-center-profile-info-inner h3{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 25px;
+    line-height: normal;
+    color: var(--secondary-black);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.home-center-profile-info-inner h5{
+    font-family: var(--SFProDisplay-Regular);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--secondary-black);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.home-center-profile-info{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 0px;
+    border-bottom: 1px solid var(--border);
+}
+
+.home-center-profile-info-inner{
+    flex-basis: 30%;
+}
+
+.home-center-profile-status-inner h5{
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 18px;
+    line-height: normal;
+    color: var(--secondary-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.home-center-profile-status-inner h5 span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+}
+
+.home-center-profile-status-inner h3{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 32px;
+    line-height: normal;
+    color: var(--secondary-black);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.home-center-profile-status{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 15px;
+}
+
+.home-center-profile-status-inner{
+    flex-basis: 50%;
+}
+
+
+.home-center-upcoming-events-wrp{
+    margin-top: 20px;
+}
+
+.home-center-upcoming-events-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.home-center-upcoming-events-title h3{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 20px;
+    line-height: normal;
+    color: var(--secondary-black);
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+.home-center-upcoming-events-title a{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 14px;
+    line-height: normal;
+    color: var(--light-color);
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+.home-center-upcoming-events-card{
+    border: 1px solid rgba(0,0,0,10%);
+    box-shadow: 0px 20px 40px -20px rgba(15,15,15,10%);
+    padding: 16px 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-upcoming-events-card-left{
+    flex-basis: 72%;
+}
+
+.home-upcoming-events-card-right{
+    flex-basis: 30%;
+}
+
+.home-upcoming-events-card-left-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-upcoming-events-card-left-profile-img{
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.home-upcoming-events-card-left-profile-img img{
+    border-radius: 50%;
+}
+
+.home-upcoming-events-card-left-profile-content h3{
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 20px;
+    line-height: normal;
+    color: var(--primary-black);
+    margin-bottom: 6px;
+}
+
+.home-upcoming-events-card-left-profile-content p{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 14px;
+    line-height: normal;
+    color: #2C8EE9;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-upcoming-events-card-left-profile-content p span{
+    color: var(--light-color);
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.home-upcoming-events-card-left-profile-content p span i{
+    font-size: 8px !important;
+    line-height: 8px !important;
+    margin-top: 2px;
+}
+
+
+.home-upcoming-events-card-left-detail{
+    padding: 30px 20px !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.home-upcoming-events-card-left-detail li{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--secondary-black);
+    list-style-type: disc;
+    margin-bottom: 7px;
+}
+
+.home-upcoming-events-card-left-detail li span{
+    font-family: var(--SFProDisplay-Bold);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home-upcoming-events-card-left-detail li span i{
+    font-size: 6px !important;
+    line-height: 6px !important;
+    margin-top: 2px;
+}
+
+.home-upcoming-events-card-rsvp-data{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-upcoming-events-card-rsvp-data h6{
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--secondary-black);
+    margin-bottom: 0px;
+}
+
+.card-rsvp-done i{
+    color: #23AA26;
+    margin-right: 2px;
+}
+.card-rsvp-pending i{
+    color: var(--light-color);
+    margin-right: 2px;
+}
+.card-rsvp-cancel i{
+    color: var(--pink);
+    margin-right: 2px;
+}
+
+.upcoming-events-card-notification-wrp > button {
+    display: inline-block;
+    width: 100%;
+    max-width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.upcoming-events-card-notification-wrp > button .g-badge {
+    display: inline-block;
+    background-color: var(--pink);
+    border-radius: 100px;
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 9px;
+    line-height: normal;
+    padding: 4px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.upcoming-events-card-notification-info{
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: none;
+    min-width: max-content;
+    right: -30px;
+    top: 30px;
+}
+
+.upcoming-events-card-notification-info button{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 15px;
+    line-height: 22.4px;
+    color: var(--primary-black);
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-upcoming-events-card-left-foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-upcoming-events-card-right{
+    width: 100%;
+    max-width: 145px;
+    height: 205px;
+    border-radius: 10px;
+    box-shadow: 0px 10.85px 17.35px -10.85px rgba(0, 0, 0, 50%);
+}
+
+.home-upcoming-events-card-right{
+    border-radius: 10px;
+}
+
+.calendar-wrp{
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: 0px 64px 64px -48px rgba(15,15,15,8%);
+    padding: 10px;
+}
+
+.calendar-wrp .accordion-button{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 22px;
+    line-height: normal;
+    color: var(--primary-black);
+    background-color: transparent;
+    padding: 16px 10px;
+}
+
+.calendar-wrp .accordion-body{
+    padding: 16px 0px;
+    padding-bottom: 0px;
+}
+
+.calender-month-event-stats-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.calender-month-event-stats-title h3{
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--primary-black);
+    background-color: transparent;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.calender-month-event-stats-title h3 span{
+    display: inline-block;
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender-month-event-stats-title i{
+    color: var(--light-color);
+    font-size: 15px;
+}
+
+.calender-month-event-stats-inner{
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 15px 10px;
+    margin-top: 20px;
+}
+
+.calender-month-event-stats-inner h5{
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 14px;
+    line-height: normal;
+    color: var(--secondary-black);
+    background-color: transparent;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.calender-month-event-stats-inner h5 span{
+    display: inline-block;
+    width: 100%;
+    max-width: 18px;
+    height: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender-month-event-stats-inner h3{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 32px;
+    line-height: normal;
+    color: var(--secondary-black);
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+
+.calender-month-event-stats-inner-wrp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.calender-month-event-stats-inner-wrp .calender-month-event-stats-inner{
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.home-latest-draf-wrp{
+    margin-top: 20px;
+}
+
+.home-latest-draf-card{
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0px 64px 64px -48px rgba(15,15,15,8%);
+    padding: 10px;
+}
+
+.upcoming-card-dropdown .dropdown-toggle{
+    background-color: transparent;
+    border: none;
+}
+
+.upcoming-card-dropdown .dropdown-menu {
+    border: none;
+    padding: 15px;
+    box-shadow: 0px 5px 40px 0px #0000001a;
+    border-radius: 16px;
+    left: auto !important;
+    right: 0px !important;
+}
+
+.upcoming-card-dropdown .dropdown-menu li {
+    margin-bottom: 15px;
+}
+
+.upcoming-card-dropdown .dropdown-menu .dropdown-item {
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 14px;
+    line-height: normal;
+    color: var(--secondary-black);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+}
+
+.upcoming-card-dropdown .dropdown-menu .dropdown-item svg {
+    width: 100%;
+    max-width: 20px;
+    min-width: 20px;
+    height: 20px;
+}
