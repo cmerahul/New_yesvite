@@ -3,6 +3,7 @@
 @import url('./header.css');
 @import url('./home.css');
 @import url('./mainmenu.css');
+@import url('./calender.css');
 
 *{
     margin: 0;
