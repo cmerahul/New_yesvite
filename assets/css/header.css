@@ -187,7 +187,6 @@ header{
 }
 
 .notification-dropdown-content .accordion-button{
-    display: block !important;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -198,6 +197,14 @@ header{
     padding: 15px 20px;
     padding-right: 30px;
     position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notification-dropdown-content .accordion-button::after{
+    background-size: 1rem 1rem !important;
+    width: 1rem;
+    height: 1rem;
 }
 
 .accordion-button:not(.collapsed){
@@ -241,9 +248,9 @@ header{
 }
 
 .accordion-button .accordion-angle-icon{
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    transform: rotate(-180deg) translateY(-50%);
+    transform: rotate(-180deg) translateY(-50%); */
     right: 20px;
     color: var(--lightgreay);
     transition: 0.3s;
@@ -540,6 +547,8 @@ header{
     padding: 20px;
     width: 300px;
     top: 30px !important;
+    left: auto !important;
+    right: 0 !important;
 }
 
 .header-profile-dropdown .home-center-profile-head{
