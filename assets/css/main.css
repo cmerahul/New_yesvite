@@ -3,6 +3,8 @@
 @import url('./header.css');
 @import url('./home.css');
 @import url('./mainmenu.css');
+@import url('./potluck.css');
+@import url('./guest.css');
 
 *{
     margin: 0;
