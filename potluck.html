@@ -1142,7 +1142,135 @@
                     role="tabpanel"
                     aria-labelledby="nav-about-tab"
                   >
-                    about
+                    <div class="about-details cmn-card">
+                        <h4 class="title">Details</h4>
+                        <div class="birth-details">
+                            <div class="d-flex align-items-center">
+                                <div class="birth-img"> 
+                                  <img src="./assets/img/birth-img.png" alt="birth-img">
+                                </div>
+                                <div class="birth-host">
+                                  <h5>Sarah’s 16th Birthday</h5>
+                                  <span>Hosted by: <span>The Walton Family</span></span>
+                                </div>
+                            </div>
+                            <div class="host-detail">
+                                <ul>
+                                  <li>RSVP By: June 20, 2024</li>
+                                  <li>Potluck Event</li>
+                                  <li>Adults Only</li>
+                                  <li>Can Bring Gursts (limit 2)</li>
+                                </ul>
+                            </div>
+                            <div class="hosted-by-date-time">
+                              <div class="hosted-by-date-time-left">
+                                <div class="hosted-by-date-time-left-icon">
+                                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.5V6.25" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 2.5V6.25" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.375 11.3633H25.625" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M26.25 10.625V21.25C26.25 25 24.375 27.5 20 27.5H10C5.625 27.5 3.75 25 3.75 21.25V10.625C3.75 6.875 5.625 4.375 10 4.375H20C24.375 4.375 26.25 6.875 26.25 10.625Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.6181 17.125H19.6294" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.6181 20.875H19.6294" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.9951 17.125H15.0063" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.9951 20.875H15.0063" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.3681 17.125H10.3794" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.3681 20.875H10.3794" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="hosted-by-date-time-content">
+                                  <h6>Date</h6>
+                                  <h3>July 23, 2020</h3>
+                                </div>
+                              </div>
+                              <div class="hosted-by-date-time-left">
+                                <div class="hosted-by-date-time-left-icon">
+                                  <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M28 15C28 21.9 22.4 27.5 15.5 27.5C8.6 27.5 3 21.9 3 15C3 8.1 8.6 2.5 15.5 2.5C22.4 2.5 28 8.1 28 15Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M20.1371 18.9742L16.2621 16.6617C15.5871 16.2617 15.0371 15.2992 15.0371 14.5117V9.38672" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                </div>
+                                <div class="hosted-by-date-time-content">
+                                  <h6>Time</h6>
+                                  <h3>8:00 to 10:00PM</h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="countdown-event">
+                              <div class="d-flex align-items-center countevent-head">
+                                <span class="d-flex align-items-center">
+                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.00086 2.71094C4.21253 2.71094 1.94336 4.9801 1.94336 7.76844C1.94336 10.5568 4.21253 12.8318 7.00086 12.8318C9.78919 12.8318 12.0584 10.5626 12.0584 7.77427C12.0584 4.98594 9.78919 2.71094 7.00086 2.71094ZM7.43836 7.58177C7.43836 7.82094 7.24003 8.01927 7.00086 8.01927C6.76169 8.01927 6.56336 7.82094 6.56336 7.58177V4.6651C6.56336 4.42594 6.76169 4.2276 7.00086 4.2276C7.24003 4.2276 7.43836 4.42594 7.43836 4.6651V7.58177Z" fill="#F73C71"/>
+                                    <path d="M8.6862 2.0138H5.31453C5.0812 2.0138 4.89453 1.82714 4.89453 1.5938C4.89453 1.36047 5.0812 1.16797 5.31453 1.16797H8.6862C8.91953 1.16797 9.1062 1.35464 9.1062 1.58797C9.1062 1.8213 8.91953 2.0138 8.6862 2.0138Z" fill="#F73C71"/>
+                                  </svg>
+                                </span>
+                                <h5>Countdown till event</h5>
+                              </div>
+                              <div class="countevent-counter-box">
+                                <div class="countevent-counter">
+                                  <h4>02</h4>
+                                  <span>Months</span>
+                                  <img src="./assets/img/colon.svg" alt="" class="colon-img">
+                                </div>
+                                <div class="countevent-counter">
+                                  <h4>22</h4>
+                                  <span>Days</span>
+                                  <img src="./assets/img/colon.svg" alt="" class="colon-img">
+                                </div>
+                                <div class="countevent-counter">
+                                  <h4>45</h4>
+                                  <span>Hours</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="detail-btn-wrp">
+                              <a href="#" class="add-calender btn">Add to calendar 
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.9987 14.6668C11.6654 14.6668 14.6654 11.6668 14.6654 8.00016C14.6654 4.3335 11.6654 1.3335 7.9987 1.3335C4.33203 1.3335 1.33203 4.3335 1.33203 8.00016C1.33203 11.6668 4.33203 14.6668 7.9987 14.6668Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.33203 8H10.6654" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 10.6668V5.3335" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </a>
+                              <a href="#" class="rsvp-btn btn">RSVP 
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2807 5.96484L8.93404 10.3115C8.4207 10.8248 7.5807 10.8248 7.06737 10.3115L2.7207 5.96484" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </a>
+                              <!-- <a href="#" class="rsvp-btn noattending-btn btn">Not Attending 
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2807 5.96484L8.93404 10.3115C8.4207 10.8248 7.5807 10.8248 7.06737 10.3115L2.7207 5.96484" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </a> -->
+                              <!-- <a href="#" class="rsvp-btn attending-btn btn">Attending 
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2807 5.96484L8.93404 10.3115C8.4207 10.8248 7.5807 10.8248 7.06737 10.3115L2.7207 5.96484" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="host-users-detail cmn-card">
+                      <h4 class="title">Your hosts</h5>
+                        <div class="host-user-con-box">
+                          <div class="host-user-con">
+                              <div class="img-wrp">
+                                  <img src="./assets/img/host-img.png" alt="host-img">                                 
+                              </div>
+                              <h5>Christina Walton</h5>
+                              <span>Host</span>
+                              <a href="#" class="msg-btn">Message</a>
+                          </div>
+                          <div class="host-user-con">
+                            <div class="img-wrp">
+                                <img src="./assets/img/host-img2.png" alt="host-img">                                 
+                            </div>
+                            <h5>Chris Walton</h5>
+                            <span>Co-host</span>
+                            <a href="#" class="msg-btn">Message</a>
+                          </div>
+                        </div>
+                        <p>“Thanks everyone for RSVP'ing on time. I hope everyone can make it to this special day of ours!”</p>
+                    </div>
                   </div>
                   <!-- ===tab-2-end=== -->
 
