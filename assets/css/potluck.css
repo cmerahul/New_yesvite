@@ -571,7 +571,7 @@
     border: 1px solid var(--pink);
     display: inline-block;
     transition: 0.5s;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -779,7 +779,7 @@
    text-align: center;
 }
 
-.dropdown-item h6{
+.category-list .dropdown-item h6{
     color: var(--secondary-black) !important;
     font-size: 14px;
     font-family: var(--SFProDisplay-Medium);
@@ -794,13 +794,14 @@
     border-radius: 16px;
 }
 
-.dropdown .dropdown-menu.show li{
+.category-list .dropdown .dropdown-menu.show li{
     margin-bottom: 10px;
 }
 
-.dropdown .dropdown-menu.show li:last-child{
+.category-list .dropdown .dropdown-menu.show li:last-child{
     margin-bottom: 0;
 }
+
 
 /* ======== responsive ======= */
 @media only screen and (max-width:575px){
