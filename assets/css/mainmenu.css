@@ -978,6 +978,7 @@
 .all-events-filter-wrp .form-check-input:checked[type=checkbox]{
     background-color: #2DA9FC;
     border: 1px solid #2DA9FC;
+    padding: 0px;
 }
 
 .all-events-filter-wrp .form-check{
@@ -1014,6 +1015,10 @@
 
 .calender-month-event-stats-wrp{
     margin-top: 30px;
+}
+
+.modal-header .btn-close{
+    font-size: 12px;
 }
 
 
