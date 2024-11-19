@@ -40,4 +40,5 @@ li{
     border: 1px solid var(--pink);;
     padding: 10px 30px;
     border-radius: 16px;
+    transition: 0.3s;
 }

@@ -39,3 +39,43 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
   });
+
+
+var swiper = new Swiper(".posts-card-post", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+      el: '.custom-pagination',
+      type: 'custom',
+      renderCustom: (swiper, current, total) => {
+          // Render number pagination only inside .custom-pagination
+          return `<span>${current} of ${total}</span>`;
+      },
+  },
+  on: {
+      init: () => updateDots(), // Update dots on initialization
+      slideChange: () => updateDots(), // Update dots on slide change
+  },
+});
+
+// Function to render custom dots outside .custom-pagination
+function updateDots() {
+  const total = swiper.slides.length;
+  const current = swiper.realIndex + 1;
+  const $dotsContainer = $('.custom-dots-container');
+
+  // Generate dot HTML
+  let dotsHTML = '';
+  for (let i = 1; i <= total; i++) {
+      dotsHTML += `<span class="dot ${i === current ? 'active' : ''}" data-slide="${i}"></span>`;
+  }
+  $dotsContainer.html(dotsHTML);
+
+  // Add click event listener for dot navigation
+  $dotsContainer.find('.dot').on('click', function () {
+      const slideIndex = parseInt($(this).data('slide'), 10);
+      swiper.slideTo(slideIndex - 1); // Swiper index starts at 0
+  });
+}
+
+updateDots();

@@ -11,6 +11,13 @@ $(".notification-btn").on("click", function() {
   }
 });
 
+// fill-heart-icon
+  $(".posts-card-like-btn").on("click", function() {
+  const icon = this.querySelector('i');
+  icon.classList.toggle('fa-regular');
+  icon.classList.toggle('fa-solid');
+});
+
 
 
 // ===header-drodpdown===
