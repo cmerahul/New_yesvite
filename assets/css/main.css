@@ -43,3 +43,8 @@ li{
     border-radius: 16px;
     transition: 0.3s;
 }
+.cmn-btn:hover{
+    border: 1px solid var(--pink) !important;
+    background-color: transparent !important;
+    color: var(--pink) !important;
+  }

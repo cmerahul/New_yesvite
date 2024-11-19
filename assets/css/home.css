@@ -128,9 +128,9 @@ main {
 
 .hosted-by-date-time-left-icon {
   width: 100%;
-  max-width: 20px;
-  min-width: 20px;
-  height: 20px;
+  max-width: 18px;
+  min-width: 18px;
+  height: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +161,7 @@ main {
   content: "";
   position: absolute;
   top: 50%;
-  right: -5px;
+  right: -8px;
   transform: translateY(-50%);
   width: 2px;
   height: 100%;
@@ -1947,4 +1947,302 @@ main {
   border: 1px solid var(--pink) !important;
   background-color: transparent !important;
   color: var(--pink) !important;
+}
+
+.wall-main-story-wrp{
+  margin-bottom: 20px;
+}
+
+.event-center-wall-main{
+  max-height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#reaction-modal .modal-header{
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+/* ===Responsive=== */
+@media only screen and (max-width: 1399px) {
+  .hosted-by-template-slider-img {
+    width: 100%;
+    height: 330px;
+    border-radius: 10px;
+  }
+  .hosted-by-detail-inner ul li {
+    flex-basis: 100%;
+  }
+  .hosted-by-date-time{
+    flex-direction: column;
+    align-items: start  ;
+  }
+  .hosted-by-date-time-left::before{
+    display: none;
+  }
+  .hosted-by-event-stats-wrp{
+    flex-direction: column;
+  }
+  .hosted-by-event-stats-inner{
+    width: 100%;
+  }
+  .guest-attending-wrp{
+    flex-direction: column;
+  }
+  .guests-listing-buttons{
+    flex-direction: column;
+  }
+  .event-center-title h2 {
+    font-size: 32px;
+    line-height: 42.96px;
+  }
+  .main-right-guests-head h3 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .create-post-modal .modal-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .event-center-wall-main{
+    max-height: 900px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-content-right{
+    display: none;
+  }
+  .event-center-title h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .create-post-modal .modal-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .event-center-wall-main{
+    max-height: 900px;
+  }
+  .wall-main-story-item button h4{
+    font-size: 14px;
+  }
+  .hosted-by-template-slider-img {
+    height: 350px;
+  }
+  .hosted-by-info-img {
+    width: 100%;
+    max-width: 35px;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  .hosted-by-info-content h3{
+    font-size: 14px;
+  }
+  .create-post-profile-wrp img {
+    width: 100%;
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .create-post-profile-wrp h4 {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  .create-post-textcontent textarea::placeholder{
+    font-size: 15px;
+  }
+  .create-post-textcontent textarea{
+    font-size: 15px;
+  }
+  .create-post-modal .modal-content{
+    height: 550px;
+  }
+  .create-post-upload-img-head h4 {
+    font-size: 15px;
+    line-height: 22.4px;
+  }
+  .create-post-upload-img-head span {
+    display: inline-block;
+    width: 100%;
+    max-width: 22px;
+    height: 22px;
+  }
+  .create-post-modal .modal-body{
+    max-height: 450px;
+  }
+  .create-post-upload-img-head button{
+    font-size: 15px;
+  }
+  .new-main-content label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .main-content-left{
+    display: none;
+  }
+  .event-center-title h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .modal-footer .cmn-btn{
+    font-size: 16px;
+  }
+  .create-post-modal .modal-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .posts-card-show-post-img {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .event-center-title h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .posts-card-show-post-img {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .breadcrumb{
+    margin-bottom: 10px;
+  }
+  .wall-main-story-item button h4 {
+    font-size: 13px;
+  }
+  .wall-creat-photo-poll-wrp button{
+    font-size: 14px;
+  }
+  .wall-creat-photo-poll-wrp button span {
+    display: block;
+    width: 100%;
+    max-width: 22px;
+    height: 22px;
+  }
+  .create-post-modal .modal-content {
+    position: fixed;
+    top: auto !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .create-post-modal .modal-dialog{
+    margin: 0px;
+  }
+
+  .create-post-modal.fade{
+      display: none;
+  }
+
+  .create-post-modal.modal.fade .modal-dialog {
+      transition: transform .3s ease-out;
+      transform: translate(0, 0px);
+  }
+
+  .create-post-profile {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .posts-card-show-post-img {
+    height: 370px;
+  }
+  .posts-card-head-right .positive-ans{
+    font-size: 12px;
+  }
+  .posts-card-head-right .positive-ans i {
+    font-size: 14px;
+  }
+  #imagePreview .col-6 img, #imagePreview .col-6 video{
+    height: 180px;
+  }
+
+  #imagePreview .col-12 img, #imagePreview .col-12 video{
+    height: 250px;
+  }
+  .reactions-info-main .nav-tabs {
+      overflow: hidden;
+      overflow-x: scroll;
+  }
+  .reactions-info-main .nav-tabs .nav-link{
+    min-width: 80px;
+  }
+  .create-post-setting-inner h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .create-post-setting-inner .form-check-label{
+    font-size: 15px;
+  }
+  .create-post-setting-inner .form-check{
+    margin-top: 10px;
+  }
+  .create-post-setting-main-body .btn-back {
+    margin-right: 12px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .event-center-tabs-main .nav-tabs .nav-link{
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .event-center-title button{
+    max-width: 24px;
+    height: 24px;
+  }
+  .common-div-wrp{
+    padding: 14px;
+  }
+  .create-post-profile-wrp h4 {
+    font-size: 15px;
+    line-height: 22.4px;
+  }
+  .create-post-upload-img-head h4 {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+  .create-post-upload-img-head span {
+    display: inline-block;
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+  }
+  .create-post-modal .modal-content{
+    padding: 20px 15px;
+  }
+  .create-post-upload-img-main h3 {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-top: 15px;
+  }
+  .create-post-upload-img-head button {
+    font-size: 13px;
+    padding: 10px 10px;
+    gap: 8px;
+  }
+  .posts-card-show-post-img {
+    height: 300px;
+  }
+  .posts-card-like-comment-right {
+    gap: 15px;
+  }
+
+  #reaction-modal .modal-content{
+    height: 600px;
+  }
+  
 }

@@ -6,7 +6,7 @@ var swiper = new Swiper(".mySwiper", {
           el: '.custom-pagination',
           type: 'custom',
           renderCustom: (swiper, current, total) => `${current} of ${total}`,
-      },
+    },
   });
 
 
@@ -14,6 +14,36 @@ var swiper = new Swiper(".mySwiper", {
   var swiper = new Swiper(".story-slide-slider", {
     slidesPerView: 7,
     spaceBetween: 0,
+    breakpoints: {
+      320: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      425: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+      576: {
+        slidesPerView: 6,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 7,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 7,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 7,
+        spaceBetween: 0,
+      },
+    },
   });
 
 //   ===story-slider===
