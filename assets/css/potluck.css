@@ -29,7 +29,7 @@
 .item-cards .item-value{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .item-cards .item-value svg{

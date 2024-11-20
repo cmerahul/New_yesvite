@@ -1,0 +1,239 @@
+.about-details h4.title{
+    color: var(--primary-black);
+    font-size: 20px;
+    font-family: var(--SFProDisplay-Bold);
+    margin-bottom: 20px;
+}
+
+.birth-details .birth-img{
+  width: 67px;
+  height: 66px;
+  margin-right: 16px;
+}
+
+.birth-details .birth-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.birth-details .birth-host h5{
+    color: var(--secondary-black);
+    font-size: 20px;
+    font-family: var(--SFProDisplay-Bold);
+    margin-bottom: 8px;
+}
+
+.birth-details .birth-host span{
+    font-size: 14px;
+    font-family: var(--SFProDisplay-Regular);
+    color: var(--lightgreay);
+}
+
+.birth-details .birth-host span span{
+    color: var(--secondary-black);
+}
+
+.birth-details .host-detail{
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+.birth-details .host-detail ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.birth-details .host-detail li{
+    width: 50%;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    color: var(--secondary-black);
+    font-size: 15px;
+    font-family: var(--SFProDisplay-Bold);
+    margin-bottom: 5px;
+}
+
+
+.birth-details .hosted-by-date-time-left:first-child::before{
+    display: none;
+}
+
+.birth-details .hosted-by-date-time-left:last-child{
+    padding-left: 13px;
+}
+
+.birth-details .hosted-by-date-time-left:last-child::before{
+    display: block;
+    left: 0;
+    right: auto;
+}
+
+.birth-details .countdown-event{
+   border: 1px solid var(--border);
+   border-radius: 16px;
+   padding: 16px;
+   margin-bottom: 20px;
+}
+
+.birth-details .countdown-event span svg{
+    width: 14px;
+    height: 14px;
+}
+
+.birth-details .countdown-event h5{
+    color: var(--secondary-black);
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-family: var(--SFProDisplay-Semibold);
+}
+
+.countdown-event .countevent-head{
+    margin-bottom: 22px;
+}
+
+.countevent-counter-box{
+    display: flex;
+    justify-content: center;
+}
+
+.countevent-counter-box .countevent-counter{
+    width: 168px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+}
+
+.countevent-counter-box .countevent-counter h4{
+   color: var(--secondary-black);
+   font-size: 32px;
+   font-family: var(--SFProDisplay-Bold);
+   margin-bottom: 10px;
+}
+
+.countevent-counter-box .countevent-counter span{
+    color: #A0AEC0;
+    font-size: 14px;
+    font-family: var(--SFProDisplay-Medium);
+}
+
+.countevent-counter .colon-img{
+    position: absolute;
+    right: 0;
+    width: 6px;
+    height: 16px;
+    top: 8px;
+}
+
+.birth-details .detail-btn-wrp{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.birth-details .detail-btn-wrp .btn{
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--SFProDisplay-Semibold);
+}
+
+.birth-details .detail-btn-wrp .add-calender{
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: transparent !important;
+    border: 1px solid var(--border);
+    color: var(--secondary-black);
+}
+
+.birth-details .detail-btn-wrp svg{
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+}
+
+.detail-btn-wrp .noattending-btn{
+   background-color: #DE3110 !important;
+   border: 1px solid #DE3110 !important;
+}
+
+.detail-btn-wrp .attending-btn{
+    background-color: #23AA26 !important;
+    border: 1px solid #23AA26 !important;
+}
+
+.host-users-detail h4.title{
+    margin-bottom: 20px;
+    color: var(--primary-black);
+    font-size: 20px;
+    font-family: var(--SFProDisplay-Bold);
+}
+
+.host-user-con-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+}
+
+.host-users-detail .img-wrp{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 16px;
+}
+
+.host-users-detail .img-wrp img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.host-users-detail .host-user-con{
+    text-align: center;
+}
+
+.host-users-detail .host-user-con h5{
+    color: var(--secondary-black);
+    font-size: 18px;
+    font-family: var(--SFProDisplay-Semibold);
+    margin-bottom: 8px;
+}
+
+.host-users-detail .host-user-con span{
+    color: #A0AEC0;
+    font-size: 14px;
+    margin-bottom: 9px;
+    font-family: var(--SFProDisplay-Medium);
+    display: block;
+}
+
+.host-users-detail .host-user-con .msg-btn{
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--secondary-black);
+    font-size: 12px;
+    font-family: var(--SFProDisplay-Semibold);
+    padding: 10px 44px;
+}
+
+.host-users-detai p{
+    text-align: center;
+    color: var(--secondary-black);
+    font-size: 20px;
+}
