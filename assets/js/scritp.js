@@ -230,6 +230,137 @@ $(".upload-poll-delete").click(function () {
   $(".create-post-poll-wrp").addClass("d-none");
 });
 
+$(".show-comments-btn").click(function () {
+    $(".posts-card-show-all-comments-wrp").toggleClass("d-none");
+});
+
+$(".show-comment-reply-btn").click(function () {
+    $(".reply-on-comment").toggleClass("d-none");
+});
+
+
+// ===showmore-show-less===
+$(document).ready(function() {
+  var showChar = 150; // Maximum characters to show initially
+  var ellipsestext = "...";
+  var moretext = "See More";
+  var lesstext = "See Less";
+  
+  $(".posts-card-inner-questions").each(function() {
+    var content = $(this).html();
+    if (content.length > showChar) {
+      var show_content = content.substr(0, showChar); // Content to show initially
+      var hide_content = content.substr(showChar); // Content to hide
+      var html =
+        show_content + // Show part
+        '<span class="moreelipses">' + ellipsestext + '</span>' + // Ellipses
+        '<span class="remaining-content" style="display:none;">' + // Hidden part
+        hide_content + '</span>' +
+        '&nbsp;&nbsp;<a href="javascript:void(0);" class="morelink">' + moretext + '</a>';
+      $(this).html(html); // Set the HTML of the expandable content
+    }
+  });
+
+  $(".morelink").click(function() {
+    var remainingContent = $(this).prev(".remaining-content");
+    var moreLink = $(this);
+    if (moreLink.hasClass("less")) {
+      moreLink.removeClass("less");
+      moreLink.html(moretext);
+      remainingContent.slideUp(300); // Hide the rest of the content with animation
+    } else {
+      moreLink.addClass("less");
+      moreLink.html(lesstext);
+      remainingContent.slideDown(300); // Show the rest of the content with animation
+    }
+    $(this).prev(".moreelipses").toggle(); // Toggle ellipses
+    return false; // Prevent default link behavior
+  });
+});
+
+
+// ===photo-tab-js===
+// Function to handle tab change and add/remove class to body
+function handleTabChange() {
+  const body = document.body;
+  const photosTab = document.getElementById("nav-photos-tab");
+
+  // Check if the photos tab is active
+  if (photosTab.classList.contains("active")) {
+    body.classList.add("photos-tab-active");
+  } else {
+    body.classList.remove("photos-tab-active");
+  }
+}
+
+// Attach event listener to tab change
+document.querySelectorAll('.nav-link').forEach(tab => {
+  tab.addEventListener('shown.bs.tab', handleTabChange);
+});
+
+// Initial call to handle the default active tab
+handleTabChange();
+
+function handleTabChange() {
+  const body = document.querySelector('.new-main-content');
+  const photosTab = document.getElementById("nav-photos-tab");
+  const mainContentCenter = document.getElementById("main-content-center");
+  const mainContentLeft = document.getElementById("main-content-left");
+  const mainContentRight = document.getElementById("main-content-right");
+
+  const isPhotosTabActive = photosTab.classList.contains("active");
+
+  body.classList.toggle("photos-tab-active", isPhotosTabActive);
+  mainContentCenter.classList.toggle("col-xl-9", isPhotosTabActive);
+  mainContentLeft.classList.toggle("col-lg-3", isPhotosTabActive);
+  mainContentCenter.classList.toggle("col-xl-6", !isPhotosTabActive);
+  mainContentRight.classList.toggle("col-xl-3", !isPhotosTabActive);
+}
+
+
+
+// ===photo-likes-option===
+const likeButton = document.getElementById('likeButton');
+const emojiDropdown = document.getElementById('emojiDropdown');
+let pressTimer;
+
+
+// Handle long press to show emoji dropdown
+likeButton.addEventListener('mousedown', () => {
+  pressTimer = setTimeout(() => {
+    emojiDropdown.style.display = 'block'; // Show emoji dropdown after long press
+  }, 500); // Trigger long press after 1 second
+});
+
+likeButton.addEventListener('mouseup', () => {
+  clearTimeout(pressTimer); // Clear the timer if the button is released before 1 second
+});
+
+likeButton.addEventListener('mouseleave', () => {
+  clearTimeout(pressTimer); // Clear the timer if mouse leaves the button area
+});
+
+// Handle emoji click
+emojiDropdown.addEventListener('click', (e) => {
+  if (e.target && e.target.classList.contains('emoji')) {
+    const emoji = e.target.getAttribute('data-emoji');
+    
+    // Remove the heart icon and set emoji inside the button
+    likeButton.innerHTML = `<span class="emoji">${emoji}</span>`; // Show selected emoji inside button
+    
+    emojiDropdown.style.display = 'none'; // Hide emoji dropdown after selection
+  }
+});
+
+// Optional: Hide the emoji dropdown if you click outside of it
+document.addEventListener('click', (e) => {
+  if (!likeButton.contains(e.target) && !emojiDropdown.contains(e.target)) {
+    emojiDropdown.style.display = 'none'; // Hide emoji dropdown if click is outside
+  }
+});
+
+
+
 
 // ===month-scroll-event===
 function sticky_relocate() {

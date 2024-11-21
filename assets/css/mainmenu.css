@@ -765,9 +765,12 @@
     background-color: #ECB015;
 }
 .all-events-month-wise-wrp{
-    padding-left: 50px;
     margin-top: 20px;
     position: relative;
+}
+
+.all-events-month-wise-inner{
+    padding-left: 50px;
     max-height: 800px;
     overflow: hidden;
     overflow-y: scroll;
@@ -1277,9 +1280,11 @@
         font-size: 14px;
         left: -29px;
     }
-    .all-events-month-wise-wrp {
+    .all-events-month-wise-inner {
         padding-left: 35px;
     }
+
+    
 
     .all-events-filtermodal .modal-content{
         position: fixed;

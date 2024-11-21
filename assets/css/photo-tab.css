@@ -1,0 +1,318 @@
+.photos-tab-active .main-content-right{
+    display: none;
+}
+
+.photos-tab-active .event-center-tabs-main .nav-tabs{
+    max-width: 600px;
+}
+.photos-card-wrp{
+    border: 1px solid #F1F5F9;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.photo-card-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.photo-card-head-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo-card-head-left-img{
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.photo-card-head-left-img img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.photo-card-head-left-content h3{
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #020202;
+    margin-bottom: 2px;
+}
+
+.photo-card-head-left-content p{
+    font-family: var(--SFProDisplay-Regular);
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--light-color);
+    margin-bottom: 0px;
+}
+
+.photos-main-wrp{
+    margin-top: 25px;
+    max-height: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0px 10px;
+}
+
+.photos-main-wrp .col-lg-4,.photos-main-wrp .col-lg-6, .photos-main-wrp .col-md-4, .photos-main-wrp .col-sm-6{
+    padding: 0px 5px !important;
+}
+
+.photo-card-head-right{
+    position: relative;
+}
+
+.photo-card-head-right .posts-card-like-btn{
+    background-color: transparent;
+    border: transparent;
+}
+
+.photos-likes-options-wrp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    border-radius: 100px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: max-content;
+}
+
+.photos-likes-options-wrp img{
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.photo-card-photos-main-img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.photo-card-photos-main-img::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.photo-card-photos-main-img img{
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.photo-card-photos-wrp{
+    position: relative;
+}
+
+.total-photos-count-btn{
+    font-family: var(--SFProDisplay-Bold);
+    font-size: 11px;
+    line-height: normal;
+    color: var(--white);
+    background-color: var(--secondary-black);
+    border-radius: 100px;
+    padding: 6px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+}
+
+.photo-card-photos-wrp ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+.photo-card-photos-wrp ul li{
+    width: 100%;
+    max-width: 15px;
+    height: 15px;
+    object-fit: contain;
+    margin-left: -5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-card-photos-wrp ul li img{
+    object-fit: contain;
+}
+
+.photo-card-photos-wrp ul p{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 11px;
+    line-height: normal;
+    color: var(--white);
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.photo-card-photos-wrp h5{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 12px;
+    line-height: normal;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 0px;
+}
+
+.photo-card-photos-wrp h5 svg{
+    width: 100%;
+    max-width: 15px;
+    height: 15px;
+}
+
+#detail-photo-modal .modal-content{
+    max-width: 600px;
+    min-width: 600px;
+    height: 680px;
+}
+
+#detail-photo-modal .modal-body {
+    max-height: 550px;
+}
+
+
+#detail-photo-modal .modal-dialog{
+    max-width: 600px;
+} 
+
+
+#detail-photo-modal .modal-footer .posts-card-main-comment{
+    width: 100%;
+    margin: 0px;
+}
+
+#detail-photo-modal .modal-footer .posts-card-main-comment input{
+    width: 100%;
+    height: 55px;
+}
+
+#detail-photo-modal .modal-footer{
+    z-index: 5;
+    padding: 10px 15px;
+}
+
+.photo-detail-slider .swiper-button-next:after, .photo-detail-slider .swiper-button-prev:after{
+    display: none;
+}
+
+.photo-detail-slider .swiper-button-next, .photo-detail-slider .swiper-button-prev{
+    width: 100%;
+    max-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0px 24px 24px -12px rgba(0, 0, 0, 0.02);
+    color: var(--secondary-black);
+}
+
+.photo-detail-slider .posts-card-show-post-img{
+    height: 420px;
+}
+
+.selected-photo-btn{
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E73080;
+    color: var(--white);
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+}
+
+
+/* ===Responsive=== */
+
+@media only screen and (max-width: 991px) {
+    .photo-card-photos-main-img{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #detail-photo-modal .modal-content{
+        max-width: 500px;
+        min-width: 500px;
+        height: 580px;
+    }    
+    
+    #detail-photo-modal .modal-dialog{
+        max-width: 500px;
+    } 
+    .photo-detail-slider .swiper-button-next, .photo-detail-slider .swiper-button-prev {
+        width: 100%;
+        max-width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: var(--white);
+        box-shadow: 0px 24px 24px -12px rgba(0, 0, 0, 0.02);
+        color: var(--secondary-black);
+    }
+}
+
+
+@media only screen and (max-width: 575px){
+    #detail-photo-modal .modal-content{
+        max-width: 100%;
+        min-width: 100%;
+        height: 650px;
+    }    
+    
+    #detail-photo-modal .modal-dialog{
+        max-width: 100%;
+        height: 100%;
+    }
+    .photo-detail-slider .posts-card-show-post-img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    .photo-detail-slider .posts-card-show-post-img {
+        height: 300px;
+    }
+    .photo-card-photos-main-img {
+        height: 200px;
+    }
+}
