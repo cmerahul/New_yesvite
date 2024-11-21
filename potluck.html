@@ -1231,12 +1231,12 @@
                                 <path d="M8 10.6668V5.3335" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                               </a>
-                              <a href="#" class="rsvp-btn btn">RSVP 
+                              <a href="#" class="rsvp-btn btn" data-bs-toggle="modal" data-bs-target="#aboutsuccess">RSVP 
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.2807 5.96484L8.93404 10.3115C8.4207 10.8248 7.5807 10.8248 7.06737 10.3115L2.7207 5.96484" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                               </a>
-                              <!-- <a href="#" class="rsvp-btn noattending-btn btn">Not Attending 
+                              <!-- <a href="#" class="rsvp-btn noattending-btn btn" data-bs-toggle="modal" data-bs-target="#aboutrsvp">Not Attending 
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.2807 5.96484L8.93404 10.3115C8.4207 10.8248 7.5807 10.8248 7.06737 10.3115L2.7207 5.96484" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -1250,26 +1250,122 @@
                         </div>
                     </div>
                     <div class="host-users-detail cmn-card">
-                      <h4 class="title">Your hosts</h5>
-                        <div class="host-user-con-box">
-                          <div class="host-user-con">
-                              <div class="img-wrp">
-                                  <img src="./assets/img/host-img.png" alt="host-img">                                 
-                              </div>
-                              <h5>Christina Walton</h5>
-                              <span>Host</span>
-                              <a href="#" class="msg-btn">Message</a>
-                          </div>
-                          <div class="host-user-con">
+                      <h4 class="title">Your hosts</h4>
+                      <div class="host-user-con-box">
+                        <div class="host-user-con">
                             <div class="img-wrp">
-                                <img src="./assets/img/host-img2.png" alt="host-img">                                 
+                                <img src="./assets/img/host-img.png" alt="host-img">                                 
                             </div>
-                            <h5>Chris Walton</h5>
-                            <span>Co-host</span>
+                            <h5>Christina Walton</h5>
+                            <span>Host</span>
                             <a href="#" class="msg-btn">Message</a>
-                          </div>
                         </div>
-                        <p>“Thanks everyone for RSVP'ing on time. I hope everyone can make it to this special day of ours!”</p>
+                        <div class="host-user-con">
+                          <div class="img-wrp">
+                              <img src="./assets/img/host-img2.png" alt="host-img">                                 
+                          </div>
+                          <h5>Chris Walton</h5>
+                          <span>Co-host</span>
+                          <a href="#" class="msg-btn">Message</a>
+                        </div>
+                      </div>
+                      <p>“Thanks everyone for RSVP'ing on time.<br/> I hope everyone can make it to this special day of ours!”</p>
+                    </div>
+                    <div class="location-wrp cmn-card">
+                      <h4 class="title">Location</h4>
+                      <h5>Tom’s House</h5>
+                      <p>2369 Graystone Lakes Maconey, CA 90210</p>
+                      <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d144.9630579153168!3d-37.81410797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1b1f5f1f1f1!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611815623456!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <img src="./assets/img/location-marker.svg" alt="marker" class="marker">
+                      </div>
+                      <a href="#" class="direction-btn">Directions</a>
+                    </div>
+                    <div class="schedule-wrp cmn-card">
+                      <h4 class="title">Schedule</h4>
+                      <span class="timing">10:30 AM - 4:00 PM</span>
+                      <span class="shedule-img">
+                        <img src="./assets/img/shedule-img.svg" alt="schedule">
+                      </span>
+                      <div>
+                          <div class="shedule-manage-timing">
+                              <div class="shedule-timing">
+                                  <h6>10 AM</h6>
+                              </div>
+                              <div class="shedule-box green">
+                                  <div class="shedule-box-left">
+                                    <h6>Start</h6>
+                                    <span>10:00 AM - 11:00AM</span>
+                                  </div>
+                                  <span class="hrs ms-auto">1h</span>
+                              </div>
+                              <img src="./assets/img/timing-line.svg" alt="timing">
+                          </div>
+                          <div class="shedule-manage-timing">
+                            <div class="shedule-timing">
+                                <h6>11 AM</h6>
+                            </div>
+                            <div class="shedule-box yellow">
+                                <div class="shedule-box-left">
+                                  <h6>Snack Time</h6>
+                                  <span>11:00 AM - 12:00AM</span>
+                                </div>
+                                <span class="hrs ms-auto">1h</span>
+                            </div>
+                            <img src="./assets/img/timing-line.svg" alt="timing">
+                          </div>
+                          <div class="shedule-manage-timing">
+                            <div class="shedule-timing">
+                                <h6>12 AM</h6>
+                            </div>
+                            <div class="shedule-box pink">
+                                <div class="shedule-box-left">
+                                  <h6>Cake Time</h6>
+                                  <span>12:00 AM - 1:00 PM</span>
+                                </div>
+                                <span class="hrs ms-auto">1h</span>
+                            </div>
+                            <img src="./assets/img/timing-line.svg" alt="timing">
+                          </div>
+                          <div class="shedule-manage-timing">
+                            <div class="shedule-timing">
+                                <h6>1 AM</h6>
+                            </div>
+                            <div class="shedule-box blue">
+                                <div class="shedule-box-left">
+                                  <h6>Main Event</h6>
+                                  <span>1:00 AM - 3:30 PM</span>
+                                </div>
+                                <span class="hrs ms-auto">1h 30m</span>
+                            </div>
+                            <img src="./assets/img/timing-line.svg" alt="timing">
+                          </div>
+                          <div class="shedule-manage-timing">
+                            <div class="shedule-timing">
+                                <h6>3 AM</h6>
+                            </div>
+                            <div class="shedule-box red">
+                                <div class="shedule-box-left">
+                                  <h6>Ends</h6>
+                                  <span>4:00 PM</span>
+                                </div>
+                                <span class="hrs ms-auto">30m</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="gift-register cmn-card"> 
+                      <h4 class="title">Sarah’s Gift Registries</h4>
+                      <span>Buy them the gift of their choice.</span>
+                      <div class="play-store">
+                          <a href="#" class="play-store-btn target-btn">
+                            <img src="./assets/img/target.png" alt="target">
+                            <h6>Target</h6>
+                          </a>
+                          <a href="#" class="play-store-btn amazon-btn">
+                            <img src="./assets/img/amazon.png" alt="amazon">
+                          </a>
+                      </div>
                     </div>
                   </div>
                   <!-- ===tab-2-end=== -->
@@ -3261,6 +3357,155 @@
 </div>
 
 
+<!-- about rsvp Modal -->
+<div class="modal fade cmn-modal about-rsvp" id="aboutrsvp" tabindex="-1" aria-labelledby="aboutrsvpLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/img/birth-img.png" alt="rs-img" class="about-rs-img">
+                  <div>
+                    <h4 class="modal-title" id="aboutrsvpLabel">Aaron Loeb’s 5th Birthday</h4>
+                    <span>Hosted by: <span>The Walton Family</span></span>
+                  </div>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="host-detail">
+              <h5>Event Details</h5>
+              <ul>
+                <li>RSVP By Sept 20</li>
+                <li>+1 (Limit 5)</li>
+                <li>Adult Only Event</li>
+                <li>Potluck Event</li>
+              </ul>
+            </div>
+            <div class="rsvp-custom-radio guest-rsvp-attend">
+              <h6>RSVP</h6>
+              <div class="rsvp-input-form">
+                <div class="input-form">
+                  <input type="radio" id="option3" name="foo" checked="">
+                  <label for="option3">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.0013 18.3332C14.5846 18.3332 18.3346 14.5832 18.3346 9.99984C18.3346 5.4165 14.5846 1.6665 10.0013 1.6665C5.41797 1.6665 1.66797 5.4165 1.66797 9.99984C1.66797 14.5832 5.41797 18.3332 10.0013 18.3332Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.45703 9.99993L8.81536 12.3583L13.5404 7.6416" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    YES</label>
+                </div>
+                <div class="input-form">
+                    <input type="radio" id="option4" name="foo">
+                    <label for="option4"><svg class="me-2" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.4974 18.3346C15.0807 18.3346 18.8307 14.5846 18.8307 10.0013C18.8307 5.41797 15.0807 1.66797 10.4974 1.66797C5.91406 1.66797 2.16406 5.41797 2.16406 10.0013C2.16406 14.5846 5.91406 18.3346 10.4974 18.3346Z" stroke="#E03137" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.14062 12.3573L12.8573 7.64062" stroke="#E03137" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12.8573 12.3573L8.14062 7.64062" stroke="#E03137" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>NO</label>
+                </div>
+              </div>
+            </div>
+            <div class="rsvp-msgbox">
+                <h5>Message</h5>
+                <div class="input-form">
+                  <textarea name="" id="" class="form-control inputText" id="Fname" name="Fname" required="">Sorry I can’t make it!  Next time!</textarea>
+                  <label for="Fname" class="form-label input-field floating-label">Message with your RSVP</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="d-flex align-items-center">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.9987 1.3335C4.32536 1.3335 1.33203 4.32683 1.33203 8.00016C1.33203 11.6735 4.32536 14.6668 7.9987 14.6668C11.672 14.6668 14.6654 11.6735 14.6654 8.00016C14.6654 4.32683 11.672 1.3335 7.9987 1.3335ZM7.4987 5.3335C7.4987 5.06016 7.72536 4.8335 7.9987 4.8335C8.27203 4.8335 8.4987 5.06016 8.4987 5.3335V8.66683C8.4987 8.94016 8.27203 9.16683 7.9987 9.16683C7.72536 9.16683 7.4987 8.94016 7.4987 8.66683V5.3335ZM8.61203 10.9202C8.5787 11.0068 8.53203 11.0735 8.47203 11.1402C8.40536 11.2002 8.33203 11.2468 8.25203 11.2802C8.17203 11.3135 8.08536 11.3335 7.9987 11.3335C7.91203 11.3335 7.82536 11.3135 7.74536 11.2802C7.66536 11.2468 7.59203 11.2002 7.52536 11.1402C7.46536 11.0735 7.4187 11.0068 7.38536 10.9202C7.35203 10.8402 7.33203 10.7535 7.33203 10.6668C7.33203 10.5802 7.35203 10.4935 7.38536 10.4135C7.4187 10.3335 7.46536 10.2602 7.52536 10.1935C7.59203 10.1335 7.66536 10.0868 7.74536 10.0535C7.90536 9.98683 8.09203 9.98683 8.25203 10.0535C8.33203 10.0868 8.40536 10.1335 8.47203 10.1935C8.53203 10.2602 8.5787 10.3335 8.61203 10.4135C8.64536 10.4935 8.66536 10.5802 8.66536 10.6668C8.66536 10.7535 8.64536 10.8402 8.61203 10.9202Z" fill="#E2E8F0"/>
+                  </svg></span>
+                  <h6>This message will be visible to all guests.</h6>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Send</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- about success rsvp Modal -->
+<div class="modal fade cmn-modal about-rsvp" id="aboutsuccess" tabindex="-1" aria-labelledby="aboutsuccessLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/img/birth-img.png" alt="rs-img" class="about-rs-img">
+                  <div>
+                    <h4 class="modal-title" id="aboutsuccessLabel">Aaron Loeb’s 5th Birthday</h4>
+                    <span>Hosted by: <span>The Walton Family</span></span>
+                  </div>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="rsvp-custom-radio guest-rsvp-attend">
+              <h6>RSVP</h6>
+              <div class="rsvp-input-form">
+                <div class="input-form">
+                  <input type="radio" id="option5" name="foo" checked="">
+                  <label for="option5">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.0013 18.3346C14.5846 18.3346 18.3346 14.5846 18.3346 10.0013C18.3346 5.41797 14.5846 1.66797 10.0013 1.66797C5.41797 1.66797 1.66797 5.41797 1.66797 10.0013C1.66797 14.5846 5.41797 18.3346 10.0013 18.3346Z" stroke="#23AA26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.45703 9.99896L8.81536 12.3573L13.5404 7.64062" stroke="#23AA26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    YES</label>
+                </div>
+                <div class="input-form">
+                    <input type="radio" id="option6" name="foo">
+                    <label for="option6"><svg class="me-2" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.4974 18.3346C15.0807 18.3346 18.8307 14.5846 18.8307 10.0013C18.8307 5.41797 15.0807 1.66797 10.4974 1.66797C5.91406 1.66797 2.16406 5.41797 2.16406 10.0013C2.16406 14.5846 5.91406 18.3346 10.4974 18.3346Z" stroke="#E03137" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.14062 12.3573L12.8573 7.64062" stroke="#E03137" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12.8573 12.3573L8.14062 7.64062" stroke="#E03137" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>NO</label>
+                </div>
+              </div>
+            </div>
+            <div class="rsvp-guest">
+              <h5>Guests</h5>
+              <div class="rsvp-guest-count">
+                <div>
+                  <h6>Adults</h6>
+                  <div class="qty-container ms-auto">
+                    <button class="qty-btn-minus" type="button"><i class="fa fa-minus"></i></button>
+                    <input type="number" name="qty" value="0" class="input-qty">
+                    <button class="qty-btn-plus" type="button"><i class="fa fa-plus"></i></button>
+                  </div>
+                </div>
+                <div>
+                  <h6>Kids</h6>
+                  <div class="qty-container ms-auto">
+                    <button class="qty-btn-minus" type="button"><i class="fa fa-minus"></i></button>
+                    <input type="number" name="qty" value="0" class="input-qty">
+                    <button class="qty-btn-plus" type="button"><i class="fa fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rsvp-msgbox">
+                <h5>Message</h5>
+                <div class="input-form">
+                  <textarea name="" id="" class="form-control inputText" id="Fname" name="Fname" required="">Sorry I can’t make it!  Next time!</textarea>
+                  <label for="Fname" class="form-label input-field floating-label">Message with your RSVP</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="d-flex align-items-center">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.9987 1.3335C4.32536 1.3335 1.33203 4.32683 1.33203 8.00016C1.33203 11.6735 4.32536 14.6668 7.9987 14.6668C11.672 14.6668 14.6654 11.6735 14.6654 8.00016C14.6654 4.32683 11.672 1.3335 7.9987 1.3335ZM7.4987 5.3335C7.4987 5.06016 7.72536 4.8335 7.9987 4.8335C8.27203 4.8335 8.4987 5.06016 8.4987 5.3335V8.66683C8.4987 8.94016 8.27203 9.16683 7.9987 9.16683C7.72536 9.16683 7.4987 8.94016 7.4987 8.66683V5.3335ZM8.61203 10.9202C8.5787 11.0068 8.53203 11.0735 8.47203 11.1402C8.40536 11.2002 8.33203 11.2468 8.25203 11.2802C8.17203 11.3135 8.08536 11.3335 7.9987 11.3335C7.91203 11.3335 7.82536 11.3135 7.74536 11.2802C7.66536 11.2468 7.59203 11.2002 7.52536 11.1402C7.46536 11.0735 7.4187 11.0068 7.38536 10.9202C7.35203 10.8402 7.33203 10.7535 7.33203 10.6668C7.33203 10.5802 7.35203 10.4935 7.38536 10.4135C7.4187 10.3335 7.46536 10.2602 7.52536 10.1935C7.59203 10.1335 7.66536 10.0868 7.74536 10.0535C7.90536 9.98683 8.09203 9.98683 8.25203 10.0535C8.33203 10.0868 8.40536 10.1335 8.47203 10.1935C8.53203 10.2602 8.5787 10.3335 8.61203 10.4135C8.64536 10.4935 8.66536 10.5802 8.66536 10.6668C8.66536 10.7535 8.64536 10.8402 8.61203 10.9202Z" fill="#E2E8F0"/>
+                  </svg></span>
+                  <h6>This message will be visible to all guests.</h6>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Send</button>
+          </div>
+      </div>
+  </div>
+</div>
+
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -3273,5 +3518,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.0.0/apexcharts.min.js"  crossorigin="anonymous" ></script>
 <script src="./assets/js/potluck.js"></script>
 <script src="./assets/js/guest.js"></script>
+
 </body>
 </html>
