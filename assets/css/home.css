@@ -2020,6 +2020,10 @@ main {
   position: relative;
 }
 
+.post-card-dropdown .dropdown-menu .dropdown-item svg path{
+  fill: var(--light-color);
+}
+
 .post-card-dropdown .dropdown-menu .dropdown-item.active{
   background-color: transparent;
   color: var(--pink);
@@ -2028,6 +2032,11 @@ main {
 .post-card-dropdown .dropdown-menu .dropdown-item.active svg path{
   fill: var(--pink);
 }
+
+.apexcharts-canvas{
+  margin: 0px auto;
+}
+
 
 /* ===Responsive=== */
 @media only screen and (max-width: 1399px) {
@@ -2206,6 +2215,7 @@ main {
 
   .create-post-modal .modal-dialog{
     margin: 0px;
+    height: 100%;
   }
 
   .create-post-modal.fade{
