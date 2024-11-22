@@ -198,6 +198,7 @@
 .post-potluck-category .list-header button{
     border: none;
     box-shadow: none;
+    background-color: transparent;
 }
 
 .post-potluck-category .category-list .list-sub-head {
@@ -819,6 +820,10 @@
         width: 100%;
         max-width: 100%;
         border: none;
+    }
+
+    .apexcharts-datalabels-group text{
+        font-size: 15px !important;
     }
 }
 

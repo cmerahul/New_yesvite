@@ -46,7 +46,25 @@ $(".form-control").each(function() {
   }
 });
 
+// ====== textareea-resize externol icon =========
+$(function() {
+  let isResizing = false;
+  let startY, startHeight;
 
+  $(".resize-icon").on("mousedown", function(e) {
+      isResizing = true;
+      startY = e.clientY;
+      startHeight = $("#violation-textbox").height();
+  });
+
+  $(document).on("mousemove", function(e) {
+      if (isResizing) {
+          $("#violation-textbox").height(startHeight + (e.clientY - startY));
+      }
+  }).on("mouseup", function() {
+      isResizing = false;
+  });
+});
 
 
 // ======== potluck-circluler-process

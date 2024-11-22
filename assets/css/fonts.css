@@ -51,3 +51,13 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+@font-face {
+    font-family: 'SFProDisplay-Italic';
+    src: url('../fonts/SF-Pro-Display-RegularItalic.woff') format('woff2'),
+        url('../fonts/SF-Pro-Display-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

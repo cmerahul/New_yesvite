@@ -56,3 +56,12 @@ var options = {
   
   var chart = new ApexCharts(document.querySelector("#chart1"), options);
   chart.render();
+
+
+
+//   $(document).ready(function () {
+//     $(".expand-icon").on("click", function () {
+//         const textbox = $("#violation-textbox");
+//         textbox.height(textbox.height() === 44 ? 100 : 44);
+//     });
+// });
