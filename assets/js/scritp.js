@@ -286,18 +286,38 @@ $(document).ready(function () {
 });
 
 // ===photo-tab-js===
-// Function to handle tab change and add/remove class to body
-function handleTabChange() {
-  const body = document.body;
-  const photosTab = document.getElementById("nav-photos-tab");
+// // Function to handle tab change and add/remove class to body
+// function handleTabChange() {
+//   const body = document.body;
+//   const photosTab = document.getElementById("nav-photos-tab");
 
-  // Check if the photos tab is active
-  if (photosTab.classList.contains("active")) {
-    body.classList.add("photos-tab-active");
-  } else {
-    body.classList.remove("photos-tab-active");
-  }
-}
+//   // Check if the photos tab is active
+//   if (photosTab.classList.contains("active")) {
+//     body.classList.add("photos-tab-active");
+//   } else {
+//     body.classList.remove("photos-tab-active");
+//   }
+// }
+
+$(document).ready(function () {
+  // Add class to body on page load
+  $('.new-main-content').addClass('tab-wall-active');
+
+  // Listen for tab change
+  $('.nav-link').on('shown.bs.tab', function (e) {
+    // Remove any previous tab-related classes
+    $('.new-main-content').removeClass(function (index, className) {
+      return (className.match(/(^|\s)tab-\S+-active/g) || []).join(' ');
+    });
+
+    // Get the id of the newly activated tab
+    const activeTabId = $(e.target).attr('id');
+    const tabName = activeTabId.replace('nav-', '').replace('-tab', '');
+
+    // Add the new class to the body
+    $('.new-main-content').addClass(`tab-${tabName}-active`);
+  });
+});
 
 // Attach event listener to tab change
 document.querySelectorAll(".nav-link").forEach((tab) => {
