@@ -2220,6 +2220,17 @@ main {
   padding: 0;
 }
 
+.deactive-dot {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--white);
+  background-color: #f8f9fd;
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  border-radius: 50%;
+}
+
 @keyframes rotation{
   100% {
     -moz-transform: rotate(360deg);
