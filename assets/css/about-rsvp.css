@@ -576,7 +576,7 @@
 }
 
 #aboutsuccess .guest-rsvp-attend input[type=radio]:checked ~ label{
-    border: 1px solid var(--green);
+    border: 1px solid var(--green) !important;
 }
 
 #aboutsuccess .guest-rsvp-attend input[type=radio]:checked ~ label:after{
@@ -640,8 +640,18 @@
     margin-bottom: 6px;
 }
 
+.about-details .about-slider{
+    display: none;
+}
 
+.about-details .hosted-by-date-time svg{
+    width: 30px;
+    height: 30px;
+}
 
+.about-details .hosted-by-date-time svg path{
+    stroke: #000;
+}
 
 
 /* ========= responsive =========== */
@@ -679,6 +689,11 @@
     .schedule-wrp .shedule-box {
         width: 85%;
     }
+
+    .about-details .about-slider{
+        display: block;
+    }
+    
 }
 
 @media only screen and (max-width:424px){
