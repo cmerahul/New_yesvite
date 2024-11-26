@@ -18,13 +18,19 @@ var options = {
               label: 'Invites Sent',
               color: '#0f172a',
               fontSize: '18px',
+              width: 200,
+              height: 200,
               fontFamily: 'SFProDisplay-Regular',
               formatter: function (w) {
                 return w.globals.seriesTotals.reduce((a, b) => a + b, 0);
               }
+              
             }
+           
           }
+
         }
+        
       }
     },
     colors: ['#0caf60', '#E0E0DE', '#ff3b53'],
@@ -44,7 +50,7 @@ var options = {
       horizontalAlign: 'left',
       offsetY: 0,
       fontSize: '14px',
-      width: 215,
+      width: 500,
       fontFamily: 'SFProDisplay-Regular',
       fontWeight: '500',
       formatter: function(seriesName, opts) {
@@ -56,8 +62,6 @@ var options = {
   
   var chart = new ApexCharts(document.querySelector("#chart1"), options);
   chart.render();
-
-
 
 //   $(document).ready(function () {
 //     $(".expand-icon").on("click", function () {

@@ -125,7 +125,7 @@
     right: 0;
     width: 6px;
     height: 16px;
-    top: 8px;
+    top: 12px;
 }
 
 .birth-details .detail-btn-wrp{
@@ -226,7 +226,7 @@
     border-radius: 10px;
     text-align: center;
     color: var(--secondary-black);
-    font-size: 12px;
+    font-size: 14px;
     font-family: var(--SFProDisplay-Semibold);
     padding: 10px 44px;
 }
@@ -512,7 +512,7 @@
 .about-rsvp .rsvp-custom-radio h6{
     font-size: 14px;
     color: var(--secondary-black);
-    font-family: var(--SFProDisplay-Medium);
+    font-family: var(--SFProDisplay-Bold);
     margin-bottom: 10px;
 }
 
@@ -584,6 +584,20 @@
     border-color: var(--green) !important;
 }
 
+#aboutsuccess .guest-rsvp-attend .rsvp-no-checkbox input[type=radio]:checked ~ label{
+    border: 1px solid var(--pink) !important;
+}
+
+#aboutsuccess .guest-rsvp-attend .rsvp-no-checkbox input[type=radio]:checked ~ label svg path{
+    stroke: #E03137;
+}
+
+#aboutsuccess .guest-rsvp-attend .rsvp-no-checkbox input[type=radio]:checked ~ label::after{
+    background-color: var(--pink) !important;
+    border-color: var(--pink) !important;
+}
+
+
 #aboutsuccess .rsvp-guest h5{
     font-size: 14px;
     font-family: var(--SFProDisplay-Bold);
@@ -631,6 +645,7 @@
     font-family: var(--SFProDisplay-Regular);
     width: 100%;
     text-align: center;
+    padding: 0px;
 }
 
 .rsvp-guest .rsvp-guest-count h6{
@@ -644,9 +659,10 @@
     display: none;
 }
 
-.about-details .hosted-by-date-time svg{
-    width: 30px;
-    height: 30px;
+.about-details .hosted-by-date-time .hosted-by-date-time-left-icon{
+    width: 100%;
+    max-width: 25px;
+    height: 25px;
 }
 
 .about-details .hosted-by-date-time svg path{
@@ -659,11 +675,26 @@
     .birth-details .hosted-by-date-time{
         flex-direction: row;
     }
+
+    
+    .apexcharts-inner {
+        transform: translate(16%, 0);
+    }
+
 }
 
 @media only screen and (max-width:1199px){
     .schedule-wrp .shedule-box{
         width: 85%;
+    }
+    .apexcharts-inner {
+        transform: translate(20%, 0);
+    }
+}
+
+@media only screen and (max-width:991px){
+    .apexcharts-inner {
+        transform: translate(25%, 0);
     }
 }
 
@@ -671,6 +702,10 @@
     .schedule-wrp .shedule-box{
         width: 87%;
     }
+    .apexcharts-inner {
+        transform: translate(14%, 0);
+    }
+    
 }
 
 @media only screen and (max-width:575px){
@@ -739,3 +774,14 @@
         font-size: 14px;
     }
 }
+
+  @media only screen and (max-width: 399px){
+    .apexcharts-inner {
+      transform: translate(8%, 0);
+    }
+  }
+  @media only screen and (max-width: 379px){
+    .apexcharts-inner {
+      transform: translate(5%, 0);
+    }
+  }

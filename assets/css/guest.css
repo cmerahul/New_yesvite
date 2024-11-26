@@ -227,7 +227,7 @@
 .guest-user-list .sucesss-cat h5::after{
     content: '';
     position: absolute;
-    width: 3px;
+    width: 2px;
     height: 15px;
     top: 50%;
     right: 0;
@@ -400,22 +400,28 @@ display:none;}
     margin-top: 20px;
 }
 
-.guest-rsvp-attend input[type=radio]:checked + label {
+.guest-rsvp-attend .rsvp-no-checkbox input[type=radio]:checked + label {
     border: 1px solid var(--pink) !important;
+}
+
+.guest-rsvp-attend .rsvp-no-checkbox input[type=radio]:checked + label:after{
+    background-color: var(--pink) !important;
+    padding: 0.3em;
+    border-color: var(--pink) !important;
 }
 
 .guest-rsvp-attend input[type=radio]:checked ~ label,
 .guest-rsvp-attend input[type=radio]:checked > label
 {
-    border: 1px solid var(--pink) !important;
+    border: 1px solid var(--green) !important;
 }
-
-
 
 .guest-rsvp-attend input[type=radio] ~ label:after
 {
     content:'';
-    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width:1.5em;
     height:1.5em;
     float:right;
@@ -431,9 +437,9 @@ display:none;}
 
 .guest-rsvp-attend input[type=radio]:checked ~ label:after
 {
-    background-color: var(--pink) !important;
-    padding: 0.3em;
-    border-color: var(--pink) !important;
+    background-color: var(--green) !important;
+    padding: 0.3em ;
+    border-color: var(--green) !important;
 }
 
 .guest-rsvp-attend svg{
@@ -442,11 +448,12 @@ display:none;}
     margin-right: 10px;
 }
 
+#aboutsuccess .guest-rsvp-attend svg path{
+    stroke: var(--light-color);
+}
 
-.guest-rsvp-attend input[type=radio]:checked ~ label:after {
-    background-color: var(--pink) !important;
-    padding: 0.3em;
-    border-color: var(--pink) !important;
+#aboutsuccess .guest-rsvp-attend input[type=radio]:checked ~ label svg path{
+    stroke: var(--green);
 }
 
 .guest-rsvp-attend h6{
@@ -918,6 +925,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     left:10px;
     background: #ffffff;
     padding: 0px 5px 0px 5px;
+    display: inline-block;
+    width: fit-content;
 }
 
 .modal.cmn-modal .floatingfocus span{
@@ -1253,6 +1262,38 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border: 1px solid transparent;
     color: var(--lightgreay);
 }
+
+
+/* .apexcharts-canvas, foreignObject, .apexcharts-inner{
+    width: 100% !important;
+} */
+
+.apexcharts-legend{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+}
+
+.apexcharts-legend-text{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apexcharts-canvas{
+    width: 100% !important;
+    text-align: center;
+}
+
+foreignObject{
+    width: 100% !important;
+}
+
+.apexcharts-inner {
+    transform: translate(21%, 0);
+}
+
 
 /* ======= responsive ====== */
 @media only screen and (max-width:575px){

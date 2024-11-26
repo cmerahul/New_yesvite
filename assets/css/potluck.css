@@ -129,6 +129,10 @@
     border-radius: 10px;
     display: inline-block;
     margin-bottom: 24px;
+    font-family: var(--SFProDisplay-Semibold);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary-black);
 }
 
 .massage-host .massge-data p{

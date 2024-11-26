@@ -428,10 +428,10 @@
 
     .phototab-add-new-photos-wrp{
         position: fixed;
-        bottom: 10px;
+        bottom: 80px;
         left: 50%;
-        transform: translateX(-50%);
-        max-width: calc(100% - 50px);
+        transform: translateX(-50%);    
+        max-width: calc(100% - 20px);
     }
 }
 

@@ -176,10 +176,13 @@ $(document).on("change", ".fileInputtype", function (event) {
   });
 });
 
+
 // Add new option on click
 $(".option-add-btn").on("click", function () {
   const pollOptionsContainer = $(".poll-options");
   const optionCount = pollOptionsContainer.children().length + 1;
+  console.log(optionCount);
+  
 
   const newOption = $(`
     <div class="mb-3">
@@ -301,21 +304,21 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   // Add class to body on page load
-  $('.new-main-content').addClass('tab-wall-active');
+  $(".new-main-content").addClass("tab-wall-active");
 
   // Listen for tab change
-  $('.nav-link').on('shown.bs.tab', function (e) {
+  $(".nav-link").on("shown.bs.tab", function (e) {
     // Remove any previous tab-related classes
-    $('.new-main-content').removeClass(function (index, className) {
-      return (className.match(/(^|\s)tab-\S+-active/g) || []).join(' ');
+    $(".new-main-content").removeClass(function (index, className) {
+      return (className.match(/(^|\s)tab-\S+-active/g) || []).join(" ");
     });
 
     // Get the id of the newly activated tab
-    const activeTabId = $(e.target).attr('id');
-    const tabName = activeTabId.replace('nav-', '').replace('-tab', '');
+    const activeTabId = $(e.target).attr("id");
+    const tabName = activeTabId.replace("nav-", "").replace("-tab", "");
 
     // Add the new class to the body
-    $('.new-main-content').addClass(`tab-${tabName}-active`);
+    $(".new-main-content").addClass(`tab-${tabName}-active`);
   });
 });
 
@@ -374,10 +377,7 @@ $(document).ready(function () {
 
     // Optional: Hide the emoji dropdown if you click outside of it
     $(document).on("click touchstart", function (e) {
-      if (
-        !$container.is(e.target) &&
-        $container.has(e.target).length === 0
-      ) {
+      if (!$container.is(e.target) && $container.has(e.target).length === 0) {
         $emojiDropdown.hide(); // Hide emoji dropdown if click is outside
       }
     });
@@ -385,20 +385,20 @@ $(document).ready(function () {
 });
 
 // ===mute-post===
-$(document).ready(function() {
-  $('.mute-post-btn').on('click', function() {
-    const $button = $(this);  
-    const $icon = $button.find('.muteIcon');  
-    const $buttonText = $button.find('.mute-post-btn-text');
+$(document).ready(function () {
+  $(".mute-post-btn").on("click", function () {
+    const $button = $(this);
+    const $icon = $button.find(".muteIcon");
+    const $buttonText = $button.find(".mute-post-btn-text");
 
-    if ($buttonText.text() === 'Mute') {
-      $buttonText.text('Unmute');
+    if ($buttonText.text() === "Mute") {
+      $buttonText.text("Unmute");
       $icon.html(`
         <path d="M11.5651 17.1583C10.9068 17.1583 10.1818 16.925 9.45677 16.4667L7.02344 14.9417C6.85677 14.8417 6.6651 14.7833 6.47344 14.7833H5.27344C3.25677 14.7833 2.14844 13.675 2.14844 11.6583V8.32501C2.14844 6.30834 3.25677 5.20001 5.27344 5.20001H6.4651C6.65677 5.20001 6.84844 5.14167 7.0151 5.04167L9.44844 3.51667C10.6651 2.75834 11.8484 2.61667 12.7818 3.13334C13.7151 3.65001 14.2234 4.72501 14.2234 6.16667V13.8083C14.2234 15.2417 13.7068 16.325 12.7818 16.8417C12.4151 17.0583 12.0068 17.1583 11.5651 17.1583ZM5.27344 6.45834C3.95677 6.45834 3.39844 7.01667 3.39844 8.33334V11.6667C3.39844 12.9833 3.95677 13.5417 5.27344 13.5417H6.4651C6.89844 13.5417 7.3151 13.6583 7.68177 13.8917L10.1151 15.4167C10.9234 15.9167 11.6734 16.05 12.1818 15.7667C12.6901 15.4833 12.9818 14.775 12.9818 13.8333V6.17501C12.9818 5.22501 12.6901 4.51667 12.1818 4.24167C11.6734 3.95834 10.9234 4.08334 10.1151 4.59167L7.68177 6.10834C7.3151 6.34167 6.89844 6.45834 6.4651 6.45834H5.27344Z" fill="#F73C71"/>
         <path d="M16.1096 13.9583C15.9763 13.9583 15.8513 13.9166 15.7346 13.8333C15.4596 13.6249 15.4013 13.2333 15.6096 12.9583C16.9179 11.2166 16.9179 8.78328 15.6096 7.04161C15.4013 6.76661 15.4596 6.37494 15.7346 6.16661C16.0096 5.95828 16.4013 6.01661 16.6096 6.29161C18.2513 8.47494 18.2513 11.5249 16.6096 13.7083C16.4929 13.8749 16.3013 13.9583 16.1096 13.9583Z" fill="#F73C71"/>
       `);
     } else {
-      $buttonText.text('Mute');
+      $buttonText.text("Mute");
       $icon.html(`
         <path d="M5.83464 14.7916H4.16797C2.1513 14.7916 1.04297 13.6833 1.04297 11.6666V8.33331C1.04297 6.31664 2.1513 5.20831 4.16797 5.20831H5.35964C5.5513 5.20831 5.74297 5.14997 5.90964 5.04997L8.34297 3.52497C9.55964 2.76664 10.743 2.62497 11.6763 3.14164C12.6096 3.65831 13.118 4.73331 13.118 6.17497V6.97497C13.118 7.31664 12.8346 7.59997 12.493 7.59997C12.1513 7.59997 11.868 7.31664 11.868 6.97497V6.17497C11.868 5.22497 11.5763 4.51664 11.068 4.24164C10.5596 3.95831 9.80964 4.08331 9.0013 4.59164L6.56797 6.10831C6.20964 6.34164 5.78464 6.45831 5.35964 6.45831H4.16797C2.8513 6.45831 2.29297 7.01664 2.29297 8.33331V11.6666C2.29297 12.9833 2.8513 13.5416 4.16797 13.5416H5.83464C6.1763 13.5416 6.45964 13.825 6.45964 14.1666C6.45964 14.5083 6.1763 14.7916 5.83464 14.7916Z" fill="#94A3B8"/>
         <path d="M10.4577 17.1583C9.79934 17.1583 9.07434 16.925 8.34934 16.4666C8.05767 16.2833 7.96601 15.9 8.14934 15.6083C8.33267 15.3166 8.71601 15.225 9.00767 15.4083C9.81601 15.9083 10.566 16.0416 11.0743 15.7583C11.5827 15.475 11.8743 14.7666 11.8743 13.825V10.7916C11.8743 10.45 12.1577 10.1666 12.4993 10.1666C12.841 10.1666 13.1243 10.45 13.1243 10.7916V13.825C13.1243 15.2583 12.6077 16.3416 11.6827 16.8583C11.3077 17.0583 10.891 17.1583 10.4577 17.1583Z" fill="#94A3B8"/>
@@ -409,7 +409,6 @@ $(document).ready(function() {
     }
   });
 });
-
 
 // ===hide-post===
 $(".hide-post-btn").on("click", function () {
@@ -422,8 +421,9 @@ $(".hide-post-btn").on("click", function () {
 
     // Change icon to "eye"
     icon.html(`
-      <path d="M1 10C1 10 4.5 3 10 3C15.5 3 19 10 19 10C19 10 15.5 17 10 17C4.5 17 1 10 1 10Z" fill="#94A3B8" />
-      <circle cx="10" cy="10" r="3" fill="#94A3B8" />
+        <path d="M9.99896 13.6084C8.00729 13.6084 6.39062 11.9917 6.39062 10.0001C6.39062 8.00839 8.00729 6.39172 9.99896 6.39172C11.9906 6.39172 13.6073 8.00839 13.6073 10.0001C13.6073 11.9917 11.9906 13.6084 9.99896 13.6084ZM9.99896 7.64172C8.69896 7.64172 7.64062 8.70006 7.64062 10.0001C7.64062 11.3001 8.69896 12.3584 9.99896 12.3584C11.299 12.3584 12.3573 11.3001 12.3573 10.0001C12.3573 8.70006 11.299 7.64172 9.99896 7.64172Z" fill="#94A3B8"></path>
+  <path d="M9.99844 17.5166C6.8651 17.5166 3.90677 15.6833 1.87344 12.4999C0.990104 11.1249 0.990104 8.88328 1.87344 7.49994C3.9151 4.31661 6.87344 2.48328 9.99844 2.48328C13.1234 2.48328 16.0818 4.31661 18.1151 7.49994C18.9984 8.87494 18.9984 11.1166 18.1151 12.4999C16.0818 15.6833 13.1234 17.5166 9.99844 17.5166ZM9.99844 3.73328C7.30677 3.73328 4.73177 5.34994 2.93177 8.17494C2.30677 9.14994 2.30677 10.8499 2.93177 11.8249C4.73177 14.6499 7.30677 16.2666 9.99844 16.2666C12.6901 16.2666 15.2651 14.6499 17.0651 11.8249C17.6901 10.8499 17.6901 9.14994 17.0651 8.17494C15.2651 5.34994 12.6901 3.73328 9.99844 3.73328Z" fill="#94A3B8"></path>
+  <path class="slash-line" d="M2 2L18 18" stroke="#94A3B8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
     `);
   } else {
     // Change back to "Hide Post"
@@ -441,21 +441,31 @@ $(".hide-post-btn").on("click", function () {
   }
 });
 
+$(document).ready(function () {
+  $(".popup-videos").magnificPopup({
+    disableOn: 320,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
 
-// ===month-scroll-event===
+    fixedContentPos: false,
+  });
+});
+
+// // ===month-scroll-event===
 function sticky_relocate() {
   var window_top = $(window).scrollTop();
   var div_top = $("#scrollStatus").offset().top;
   var activeTab = $(".tab-pane.active");
 
+  console.log("Window Top:", window_top);
+  console.log("Div Top:", div_top);
+  console.log("Active Tab:", activeTab);
+
   if (activeTab.length > 0) {
-    if (window_top > div_top) {
-      const myElement = document.querySelector("#tabbtn1");
-      if (myElement.classList.contains("sticknew")) {
-        $("#tabbtn1").addClass("stick extra-stick").removeClass("sticknew");
-      } else {
-        $("#tabbtn1").addClass("stick").removeClass("sticknew");
-      }
+    if (window_top > div_top && div_top !== 0) {
+      $("#tabbtn1").addClass("stick");
     } else {
       $("#tabbtn1").removeClass("stick");
     }
@@ -463,27 +473,17 @@ function sticky_relocate() {
 
   var div_top2 = $("#scrollStatus2").offset().top;
   if (activeTab.length > 0) {
-    if (window_top > div_top2) {
-      const myElement = document.querySelector("#tabbtn2");
-      if (myElement.classList.contains("sticknew")) {
-        $("#tabbtn2").addClass("stick extra-stick").removeClass("sticknew");
-      } else {
-        $("#tabbtn2").addClass("stick").removeClass("sticknew");
-      }
+    if (window_top > div_top2 && div_top2 !== 0) {
+      $("#tabbtn2").addClass("stick");
     } else {
       $("#tabbtn2").removeClass("stick");
     }
   }
 
   var div_top3 = $("#scrollStatus3").offset().top;
-  if (activeTab.length > 0) {
+  if (activeTab.length > 0 && div_top3 !== 0) {
     if (window_top > div_top3) {
-      const myElement = document.querySelector("#tabbtn3");
-      if (myElement.classList.contains("sticknew")) {
-        $("#tabbtn3").addClass("stick extra-stick").removeClass("sticknew");
-      } else {
-        $("#tabbtn3").addClass("stick").removeClass("sticknew");
-      }
+      $("#tabbtn3").addClass("stick");
     } else {
       $("#tabbtn3").removeClass("stick");
     }
@@ -495,85 +495,76 @@ $(function () {
   sticky_relocate();
 });
 
-function sticky_relocate1() {
-  var window_top = $(window).scrollTop();
-  var div_top = $("#scrollStatus2").offset().top;
-  var activeTab = $(".tab-pane.active");
 
-  console.log("Window Top:", window_top);
-  console.log("Div Top:", div_top);
-  console.log("Active Tab:", activeTab);
-}
+// document.addEventListener("DOMContentLoaded", function () {
+//   let lastScrollTop = 0;
 
-document.addEventListener("DOMContentLoaded", function () {
-  let lastScrollTop = 0;
+//   document
+//     .getElementById("scrollStatus")
+//     .addEventListener("scroll", function () {
+//       const currentScrollTop = this.scrollTop;
+//       const windowTop = $(window).scrollTop();
+//       const divTop = $("#scrollStatus").offset().top;
 
-  document
-    .getElementById("scrollStatus")
-    .addEventListener("scroll", function () {
-      const currentScrollTop = this.scrollTop;
-      const windowTop = $(window).scrollTop();
-      const divTop = $("#scrollStatus").offset().top;
+//       if (currentScrollTop > lastScrollTop && windowTop > divTop) {
+//         // Scrolling down and past the top of #scrollStatus
+//         $(".all-events-month-show")
+//           .addClass("stick extra-stick")
+//           .removeClass("sticknew");
+//       } else if (currentScrollTop > lastScrollTop) {
+//         // Scrolling down, but not past the top of #scrollStatus
+//         $(".all-events-month-show").addClass("sticknew").removeClass("stick");
+//       } else if (currentScrollTop <= 0) {
+//         // Scrolling back up to the top
+//         $(".all-events-month-show").removeClass("sticknew extra-stick");
+//       }
 
-      if (currentScrollTop > lastScrollTop && windowTop > divTop) {
-        // Scrolling down and past the top of #scrollStatus
-        $(".all-events-month-show")
-          .addClass("stick extra-stick")
-          .removeClass("sticknew");
-      } else if (currentScrollTop > lastScrollTop) {
-        // Scrolling down, but not past the top of #scrollStatus
-        $(".all-events-month-show").addClass("sticknew").removeClass("stick");
-      } else if (currentScrollTop <= 0) {
-        // Scrolling back up to the top
-        $(".all-events-month-show").removeClass("sticknew extra-stick");
-      }
+//       lastScrollTop = currentScrollTop;
+//     });
 
-      lastScrollTop = currentScrollTop;
-    });
+//   document
+//     .getElementById("scrollStatus2")
+//     .addEventListener("scroll", function () {
+//       const currentScrollTop = this.scrollTop;
+//       const windowTop = $(window).scrollTop();
+//       const divTop = $("#scrollStatus2").offset().top;
 
-  document
-    .getElementById("scrollStatus2")
-    .addEventListener("scroll", function () {
-      const currentScrollTop = this.scrollTop;
-      const windowTop = $(window).scrollTop();
-      const divTop = $("#scrollStatus2").offset().top;
+//       if (currentScrollTop > lastScrollTop && windowTop > divTop) {
+//         // Scrolling down and past the top of #scrollStatus
+//         $(".all-events-month-show")
+//           .addClass("stick extra-stick")
+//           .removeClass("sticknew");
+//       } else if (currentScrollTop > lastScrollTop) {
+//         // Scrolling down, but not past the top of #scrollStatus
+//         $(".all-events-month-show").addClass("sticknew").removeClass("stick");
+//       } else if (currentScrollTop <= 0) {
+//         // Scrolling back up to the top
+//         $(".all-events-month-show").removeClass("sticknew extra-stick");
+//       }
 
-      if (currentScrollTop > lastScrollTop && windowTop > divTop) {
-        // Scrolling down and past the top of #scrollStatus
-        $(".all-events-month-show")
-          .addClass("stick extra-stick")
-          .removeClass("sticknew");
-      } else if (currentScrollTop > lastScrollTop) {
-        // Scrolling down, but not past the top of #scrollStatus
-        $(".all-events-month-show").addClass("sticknew").removeClass("stick");
-      } else if (currentScrollTop <= 0) {
-        // Scrolling back up to the top
-        $(".all-events-month-show").removeClass("sticknew extra-stick");
-      }
+//       lastScrollTop = currentScrollTop;
+//     });
 
-      lastScrollTop = currentScrollTop;
-    });
+//   document
+//     .getElementById("scrollStatus3")
+//     .addEventListener("scroll", function () {
+//       const currentScrollTop = this.scrollTop;
+//       const windowTop = $(window).scrollTop();
+//       const divTop = $("#scrollStatus3").offset().top;
 
-  document
-    .getElementById("scrollStatus3")
-    .addEventListener("scroll", function () {
-      const currentScrollTop = this.scrollTop;
-      const windowTop = $(window).scrollTop();
-      const divTop = $("#scrollStatus3").offset().top;
+//       if (currentScrollTop > lastScrollTop && windowTop > divTop) {
+//         // Scrolling down and past the top of #scrollStatus
+//         $(".all-events-month-show")
+//           .addClass("stick extra-stick")
+//           .removeClass("sticknew");
+//       } else if (currentScrollTop > lastScrollTop) {
+//         // Scrolling down, but not past the top of #scrollStatus
+//         $(".all-events-month-show").addClass("sticknew").removeClass("stick");
+//       } else if (currentScrollTop <= 0) {
+//         // Scrolling back up to the top
+//         $(".all-events-month-show").removeClass("sticknew extra-stick");
+//       }
 
-      if (currentScrollTop > lastScrollTop && windowTop > divTop) {
-        // Scrolling down and past the top of #scrollStatus
-        $(".all-events-month-show")
-          .addClass("stick extra-stick")
-          .removeClass("sticknew");
-      } else if (currentScrollTop > lastScrollTop) {
-        // Scrolling down, but not past the top of #scrollStatus
-        $(".all-events-month-show").addClass("sticknew").removeClass("stick");
-      } else if (currentScrollTop <= 0) {
-        // Scrolling back up to the top
-        $(".all-events-month-show").removeClass("sticknew extra-stick");
-      }
-
-      lastScrollTop = currentScrollTop;
-    });
-});
+//       lastScrollTop = currentScrollTop;
+//     });
+// });
