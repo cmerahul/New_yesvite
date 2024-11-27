@@ -367,6 +367,95 @@
     z-index: 1;
 }
 
+.photos-card-dropdown-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.photo-card-head-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.photos-card-dropdown .dropdown-menu{
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 10%);
+    border: none;
+    padding: 20px;
+    left: auto !important;
+    right: 0 !important;
+}
+.photos-card-dropdown .dropdown-menu li{
+    margin-bottom: 20px;
+}
+.photos-card-dropdown .dropdown-menu li:last-child{
+    margin-bottom: 0px;
+}
+
+.photos-card-dropdown .dropdown-menu .dropdown-item{
+    font-family: var(--SFProDisplay-Medium);
+    font-size: 14px;
+    line-height: normal;
+    color: var(--secondary-black);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+}
+.photos-card-dropdown .dropdown-menu .dropdown-item svg{
+    width: 100%;
+    max-width: 20px;
+    min-width: 20px;
+    height: 20px;
+}
+.photos-card-dropdown .dropdown-menu .dropdown-item svg path{
+    stroke: var(--light-color);
+}
+
+.photo-card-head-right .form-check{
+    width: 100%;
+    max-width: 24px;
+    height: 24px;
+    padding: 0px;
+}
+
+.photo-card-head-right .form-check-input{
+    width: 24px;
+    max-width: 24px;
+    height: 24px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 8px;
+}
+
+.photo-card-head-right .form-check-input:checked[type=checkbox]{
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.bulk-select-photo-wrp p{
+    font-family: var(--SFProDisplay-Semibold);
+}
+
+.bulk-select-photo-wrp .phototab-add-new-photos-img{
+    gap: 10px;
+}
+.bulk-select-photo-wrp .add-new-photos-btn svg{
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+}
+
+.bulk-select-photo-wrp .add-new-photos-btn{
+    padding: 10px 20px;
+}
+
+.bulk-select-photo-wrp .add-new-photos-btn:hover svg path{
+    fill: var(--pink);
+}
+
 
 /* ===Responsive=== */
 
@@ -432,6 +521,9 @@
         left: 50%;
         transform: translateX(-50%);    
         max-width: calc(100% - 20px);
+    }
+    .photos-tab-active .event-center-title {
+        display: flex;
     }
 }
 

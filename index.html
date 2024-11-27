@@ -3457,7 +3457,7 @@
                                         </div>
                                     </div>
                                     <div class="photo-card-head-right">
-                                      <button class="posts-card-like-btn" id="likeButton">
+                                      <!-- <button class="posts-card-like-btn" id="likeButton">
                                         <i class="fa-regular fa-heart"></i>
                                       </button>
                                       
@@ -3469,6 +3469,34 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div> -->
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3517,6 +3545,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3565,6 +3618,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3613,6 +3691,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3661,6 +3764,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3709,6 +3837,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3757,6 +3910,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3805,6 +3983,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3853,6 +4056,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3901,6 +4129,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3949,6 +4202,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -3997,54 +4275,31 @@
                                         <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
                                       </div>
                                       
-                                    </div>
-                                </div>
-                                <div class="photo-card-photos-wrp">
-                                    <div class="photo-card-photos-main-img">
-                                        <img src="./assets/img/photos-main-img.png" alt="">
-                                    </div>
-                                    <button class="total-photos-count-btn" type="button" data-bs-toggle="modal" data-bs-target="#detail-photo-modal">+10</button>
-                                    <ul>
-                                      <li><img src="./assets/img/heart-emoji.png" alt=""></li>
-                                      <li><img src="./assets/img/smily-emoji.png" alt=""></li>
-                                      <li><img src="./assets/img/clap-icon.png" alt=""></li>
-                                      <p>105</p>
-                                    </ul>
-                                    <h5>
-                                      <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M9.91602 1.16669H4.08268C2.47268 1.16669 1.16602 2.46752 1.16602 4.07169V7.56002V8.14335C1.16602 9.74752 2.47268 11.0484 4.08268 11.0484H4.95768C5.11518 11.0484 5.32518 11.1534 5.42435 11.2817L6.29935 12.4425C6.68435 12.9559 7.31435 12.9559 7.69935 12.4425L8.57435 11.2817C8.68518 11.1359 8.86018 11.0484 9.04102 11.0484H9.91602C11.526 11.0484 12.8327 9.74752 12.8327 8.14335V4.07169C12.8327 2.46752 11.526 1.16669 9.91602 1.16669ZM7.58268 8.02085H4.08268C3.84352 8.02085 3.64518 7.82252 3.64518 7.58335C3.64518 7.34419 3.84352 7.14585 4.08268 7.14585H7.58268C7.82185 7.14585 8.02018 7.34419 8.02018 7.58335C8.02018 7.82252 7.82185 8.02085 7.58268 8.02085ZM9.91602 5.10419H4.08268C3.84352 5.10419 3.64518 4.90585 3.64518 4.66669C3.64518 4.42752 3.84352 4.22919 4.08268 4.22919H9.91602C10.1552 4.22919 10.3535 4.42752 10.3535 4.66669C10.3535 4.90585 10.1552 5.10419 9.91602 5.10419Z" fill="white" fill-opacity="0.5"/>
-                                      </svg>
-                                      24
-                                    </h5>
-                                    <button class="selected-photo-btn"><i class="fa-solid fa-check"></i></button>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                            <div class="photos-card-wrp">
-                                <div class="photo-card-head">
-                                    <div class="photo-card-head-left">
-                                        <div class="photo-card-head-left-img">
-                                            <img src="./assets/img/header-profile-img.png" alt="">
-                                        </div>
-                                        <div class="photo-card-head-left-content">
-                                            <h3>Aspen Dorwart</h3>
-                                            <p>10 min ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="photo-card-head-right">
-                                      <button class="posts-card-like-btn" id="likeButton">
-                                        <i class="fa-regular fa-heart"></i>
-                                      </button>
-                                      
-                                      <div class="photos-likes-options-wrp" id="emojiDropdown" style="display: none;">
-                                        <img src="./assets/img/heart-emoji.png" alt="Heart Emoji" class="emoji" data-emoji="❤️">
-                                        <img src="./assets/img/thumb-icon.png" alt="Thumb Emoji" class="emoji" data-emoji="👍">
-                                        <img src="./assets/img/smily-emoji.png" alt="Smiley Emoji" class="emoji" data-emoji="😊">
-                                        <img src="./assets/img/eye-heart-emoji.png" alt="Eye Heart Emoji" class="emoji" data-emoji="😍">
-                                        <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
+                                      <div class="photos-card-dropdown dropdown">
+                                        <button class="photos-card-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <ul class="dropdown-menu" >
+                                          <li><button class="dropdown-item"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.4987 8.33333C8.41917 8.33333 9.16536 7.58714 9.16536 6.66667C9.16536 5.74619 8.41917 5 7.4987 5C6.57822 5 5.83203 5.74619 5.83203 6.66667C5.83203 7.58714 6.57822 8.33333 7.4987 8.33333Z" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8346 1.66699H7.5013C3.33464 1.66699 1.66797 3.33366 1.66797 7.50033V12.5003C1.66797 16.667 3.33464 18.3337 7.5013 18.3337H12.5013C16.668 18.3337 18.3346 16.667 18.3346 12.5003V8.33366" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 1.66699V6.66699L16.6667 5.00033" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9987 6.66667L13.332 5" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.22656 15.7918L6.3349 13.0335C6.99323 12.5918 7.94323 12.6418 8.5349 13.1501L8.8099 13.3918C9.4599 13.9501 10.5099 13.9501 11.1599 13.3918L14.6266 10.4168C15.2766 9.85846 16.3266 9.85846 16.9766 10.4168L18.3349 11.5835" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Download </button></li>
+                                          <li><button class="dropdown-item">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.08203 4.14169L7.26536 3.05002C7.3987 2.25835 7.4987 1.66669 8.90703 1.66669H11.0904C12.4987 1.66669 12.607 2.29169 12.732 3.05835L12.9154 4.14169" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.7096 7.61658L15.168 16.0082C15.0763 17.3166 15.0013 18.3332 12.6763 18.3332H7.3263C5.0013 18.3332 4.9263 17.3166 4.83464 16.0082L4.29297 7.61658" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.60938 13.75H11.3844" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.91797 10.4167H12.0846" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> Delete </button></li>
+                                          <li><button class="dropdown-item" ><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0013 18.9587C5.05964 18.9587 1.04297 14.942 1.04297 10.0003C1.04297 5.05866 5.05964 1.04199 10.0013 1.04199C14.943 1.04199 18.9596 5.05866 18.9596 10.0003C18.9596 14.942 14.943 18.9587 10.0013 18.9587ZM10.0013 2.29199C5.7513 2.29199 2.29297 5.75033 2.29297 10.0003C2.29297 14.2503 5.7513 17.7087 10.0013 17.7087C14.2513 17.7087 17.7096 14.2503 17.7096 10.0003C17.7096 5.75033 14.2513 2.29199 10.0013 2.29199Z" fill="#94A3B8"/>
+                                            <path d="M10 11.4587C9.65833 11.4587 9.375 11.1753 9.375 10.8337V6.66699C9.375 6.32533 9.65833 6.04199 10 6.04199C10.3417 6.04199 10.625 6.32533 10.625 6.66699V10.8337C10.625 11.1753 10.3417 11.4587 10 11.4587Z" fill="#94A3B8"/>
+                                            <path d="M10.0013 14.1664C9.89297 14.1664 9.78464 14.1414 9.68464 14.0997C9.58464 14.0581 9.49297 13.9997 9.40964 13.9247C9.33464 13.8414 9.2763 13.7581 9.23464 13.6497C9.19297 13.5497 9.16797 13.4414 9.16797 13.3331C9.16797 13.2247 9.19297 13.1164 9.23464 13.0164C9.2763 12.9164 9.33464 12.8247 9.40964 12.7414C9.49297 12.6664 9.58464 12.6081 9.68464 12.5664C9.88464 12.4831 10.118 12.4831 10.318 12.5664C10.418 12.6081 10.5096 12.6664 10.593 12.7414C10.668 12.8247 10.7263 12.9164 10.768 13.0164C10.8096 13.1164 10.8346 13.2247 10.8346 13.3331C10.8346 13.4414 10.8096 13.5497 10.768 13.6497C10.7263 13.7581 10.668 13.8414 10.593 13.9247C10.5096 13.9997 10.418 14.0581 10.318 14.0997C10.218 14.1414 10.1096 14.1664 10.0013 14.1664Z" fill="#94A3B8"/>
+                                            </svg> Report</button></li>
+                                        </ul>
                                       </div>
-                                      
                                     </div>
                                 </div>
                                 <div class="photo-card-photos-wrp">
@@ -4068,103 +4323,6 @@
                                 </div>
                             </div>
                           </div>
-                          <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                            <div class="photos-card-wrp">
-                                <div class="photo-card-head">
-                                    <div class="photo-card-head-left">
-                                        <div class="photo-card-head-left-img">
-                                            <img src="./assets/img/header-profile-img.png" alt="">
-                                        </div>
-                                        <div class="photo-card-head-left-content">
-                                            <h3>Aspen Dorwart</h3>
-                                            <p>10 min ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="photo-card-head-right">
-                                      <button class="posts-card-like-btn" id="likeButton">
-                                        <i class="fa-regular fa-heart"></i>
-                                      </button>
-                                      
-                                      <div class="photos-likes-options-wrp" id="emojiDropdown" style="display: none;">
-                                        <img src="./assets/img/heart-emoji.png" alt="Heart Emoji" class="emoji" data-emoji="❤️">
-                                        <img src="./assets/img/thumb-icon.png" alt="Thumb Emoji" class="emoji" data-emoji="👍">
-                                        <img src="./assets/img/smily-emoji.png" alt="Smiley Emoji" class="emoji" data-emoji="😊">
-                                        <img src="./assets/img/eye-heart-emoji.png" alt="Eye Heart Emoji" class="emoji" data-emoji="😍">
-                                        <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
-                                      </div>
-                                      
-                                    </div>
-                                </div>
-                                <div class="photo-card-photos-wrp">
-                                    <div class="photo-card-photos-main-img">
-                                        <img src="./assets/img/photos-main-img.png" alt="">
-                                    </div>
-                                    <button class="total-photos-count-btn" type="button" data-bs-toggle="modal" data-bs-target="#detail-photo-modal">+10</button>
-                                    <ul>
-                                      <li><img src="./assets/img/heart-emoji.png" alt=""></li>
-                                      <li><img src="./assets/img/smily-emoji.png" alt=""></li>
-                                      <li><img src="./assets/img/clap-icon.png" alt=""></li>
-                                      <p>105</p>
-                                    </ul>
-                                    <h5>
-                                      <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M9.91602 1.16669H4.08268C2.47268 1.16669 1.16602 2.46752 1.16602 4.07169V7.56002V8.14335C1.16602 9.74752 2.47268 11.0484 4.08268 11.0484H4.95768C5.11518 11.0484 5.32518 11.1534 5.42435 11.2817L6.29935 12.4425C6.68435 12.9559 7.31435 12.9559 7.69935 12.4425L8.57435 11.2817C8.68518 11.1359 8.86018 11.0484 9.04102 11.0484H9.91602C11.526 11.0484 12.8327 9.74752 12.8327 8.14335V4.07169C12.8327 2.46752 11.526 1.16669 9.91602 1.16669ZM7.58268 8.02085H4.08268C3.84352 8.02085 3.64518 7.82252 3.64518 7.58335C3.64518 7.34419 3.84352 7.14585 4.08268 7.14585H7.58268C7.82185 7.14585 8.02018 7.34419 8.02018 7.58335C8.02018 7.82252 7.82185 8.02085 7.58268 8.02085ZM9.91602 5.10419H4.08268C3.84352 5.10419 3.64518 4.90585 3.64518 4.66669C3.64518 4.42752 3.84352 4.22919 4.08268 4.22919H9.91602C10.1552 4.22919 10.3535 4.42752 10.3535 4.66669C10.3535 4.90585 10.1552 5.10419 9.91602 5.10419Z" fill="white" fill-opacity="0.5"/>
-                                      </svg>
-                                      24
-                                    </h5>
-                                    <button class="selected-photo-btn"><i class="fa-solid fa-check"></i></button>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                            <div class="photos-card-wrp">
-                                <div class="photo-card-head">
-                                    <div class="photo-card-head-left">
-                                        <div class="photo-card-head-left-img">
-                                            <img src="./assets/img/header-profile-img.png" alt="">
-                                        </div>
-                                        <div class="photo-card-head-left-content">
-                                            <h3>Aspen Dorwart</h3>
-                                            <p>10 min ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="photo-card-head-right">
-                                      <button class="posts-card-like-btn" id="likeButton">
-                                        <i class="fa-regular fa-heart"></i>
-                                      </button>
-                                      
-                                      <div class="photos-likes-options-wrp" id="emojiDropdown" style="display: none;">
-                                        <img src="./assets/img/heart-emoji.png" alt="Heart Emoji" class="emoji" data-emoji="❤️">
-                                        <img src="./assets/img/thumb-icon.png" alt="Thumb Emoji" class="emoji" data-emoji="👍">
-                                        <img src="./assets/img/smily-emoji.png" alt="Smiley Emoji" class="emoji" data-emoji="😊">
-                                        <img src="./assets/img/eye-heart-emoji.png" alt="Eye Heart Emoji" class="emoji" data-emoji="😍">
-                                        <img src="./assets/img/clap-icon.png" alt="Clap Emoji" class="emoji" data-emoji="👏">
-                                      </div>
-                                      
-                                    </div>
-                                </div>
-                                <div class="photo-card-photos-wrp">
-                                    <div class="photo-card-photos-main-img">
-                                        <img src="./assets/img/photos-main-img.png" alt="">
-                                    </div>
-                                    <button class="total-photos-count-btn" type="button" data-bs-toggle="modal" data-bs-target="#detail-photo-modal">+10</button>
-                                    <ul>
-                                      <li><img src="./assets/img/heart-emoji.png" alt=""></li>
-                                      <li><img src="./assets/img/smily-emoji.png" alt=""></li>
-                                      <li><img src="./assets/img/clap-icon.png" alt=""></li>
-                                      <p>105</p>
-                                    </ul>
-                                    <h5>
-                                      <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M9.91602 1.16669H4.08268C2.47268 1.16669 1.16602 2.46752 1.16602 4.07169V7.56002V8.14335C1.16602 9.74752 2.47268 11.0484 4.08268 11.0484H4.95768C5.11518 11.0484 5.32518 11.1534 5.42435 11.2817L6.29935 12.4425C6.68435 12.9559 7.31435 12.9559 7.69935 12.4425L8.57435 11.2817C8.68518 11.1359 8.86018 11.0484 9.04102 11.0484H9.91602C11.526 11.0484 12.8327 9.74752 12.8327 8.14335V4.07169C12.8327 2.46752 11.526 1.16669 9.91602 1.16669ZM7.58268 8.02085H4.08268C3.84352 8.02085 3.64518 7.82252 3.64518 7.58335C3.64518 7.34419 3.84352 7.14585 4.08268 7.14585H7.58268C7.82185 7.14585 8.02018 7.34419 8.02018 7.58335C8.02018 7.82252 7.82185 8.02085 7.58268 8.02085ZM9.91602 5.10419H4.08268C3.84352 5.10419 3.64518 4.90585 3.64518 4.66669C3.64518 4.42752 3.84352 4.22919 4.08268 4.22919H9.91602C10.1552 4.22919 10.3535 4.42752 10.3535 4.66669C10.3535 4.90585 10.1552 5.10419 9.91602 5.10419Z" fill="white" fill-opacity="0.5"/>
-                                      </svg>
-                                      24
-                                    </h5>
-                                    <button class="selected-photo-btn"><i class="fa-solid fa-check"></i></button>
-                                </div>
-                            </div>
-                          </div>
-
                         </div>
                         <div class="no-photos-screen d-none">
                           <div class="no-photos-screen-inner">
@@ -4183,7 +4341,16 @@
                                 </div>
                                 <button class="add-new-photos-btn cmn-btn" type="button" data-bs-toggle="modal" data-bs-target="#add-new-photomodal"><i class="fa-solid fa-plus"></i> Add Photo</button>
                             </div>
-                        </div> 
+                        </div>
+                        <div class="phototab-add-new-photos-wrp bulk-select-photo-wrp">
+                          <div class="phototab-add-new-photos-img">
+                              <i class="fa-solid fa-angle-left"></i>
+                              <p>3 Photos Selected</p>
+                          </div>
+                          <button class="add-new-photos-btn cmn-btn" type="button" data-bs-toggle="modal" data-bs-target="#add-new-photomodal"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.0013 10.667L4.66797 7.33366L5.6013 6.36699L7.33464 8.10033V2.66699H8.66797V8.10033L10.4013 6.36699L11.3346 7.33366L8.0013 10.667ZM4.0013 13.3337C3.63464 13.3337 3.32075 13.2031 3.05964 12.942C2.79852 12.6809 2.66797 12.367 2.66797 12.0003V10.0003H4.0013V12.0003H12.0013V10.0003H13.3346V12.0003C13.3346 12.367 13.2041 12.6809 12.943 12.942C12.6819 13.2031 12.368 13.3337 12.0013 13.3337H4.0013Z" fill="white"/>
+                            </svg> Download</button>
+                        </div>
                     </div>
   
                   </div>

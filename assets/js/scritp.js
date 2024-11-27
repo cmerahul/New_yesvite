@@ -176,7 +176,6 @@ $(document).on("change", ".fileInputtype", function (event) {
   });
 });
 
-
 // Add new option on click
 $(".option-add-btn").on("click", function () {
   const pollOptionsContainer = $(".poll-options");
